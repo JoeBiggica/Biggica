@@ -1,4 +1,75 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+.HamburgerButton-button-3Kmsn {
+  width: 20px;
+  height: 20px;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  cursor: pointer; }
+
+.HamburgerButton-hamburger-1b52a {
+  position: relative; }
+  .HamburgerButton-hamburger-1b52a, .HamburgerButton-hamburger-1b52a:before, .HamburgerButton-hamburger-1b52a:after {
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 3px;
+    transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1); }
+  .HamburgerButton-hamburger-1b52a:before, .HamburgerButton-hamburger-1b52a:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .HamburgerButton-hamburger-1b52a:before {
+    transform: translateY(-7px); }
+  .HamburgerButton-hamburger-1b52a:after {
+    transform: translateY(7px); }
+
+.HamburgerButton-button-3Kmsn.HamburgerButton-active-2_wpj .HamburgerButton-hamburger-1b52a {
+  background: transparent; }
+  .HamburgerButton-button-3Kmsn.HamburgerButton-active-2_wpj .HamburgerButton-hamburger-1b52a:before {
+    transform: translateY(0) rotate(135deg); }
+  .HamburgerButton-button-3Kmsn.HamburgerButton-active-2_wpj .HamburgerButton-hamburger-1b52a:after {
+    transform: translateY(0) rotate(225deg); }
+
+.Header-container-3ZpuA {
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 60px; }
+
+.Header-logo-1oDyD {
+  font-size: 40px; }
+
+.Header-menu-container-2rqw1 .Header-button-3USmz {
+  position: fixed;
+  background: #232323;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center; }
+
+.Header-menu-container-2rqw1 ul.Header-menu-sKL0B {
+  display: none; }
+
+.HeroBanner-container-fYWwV {
+  width: 100%;
+  height: 100vh;
+  padding-bottom: 60px;
+  background: #232323;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; }
+
+.HeroBanner-text-container-3UaLg {
+  display: flex;
+  justify-content: center; }
+
+.HeroBanner-text-2io57 {
+  font-size: 50px;
+  color: #fff; }
+
 .styles-clearfix-2Rb3A:before,
 .styles-clearfix-2Rb3A:after {
   content: "";
