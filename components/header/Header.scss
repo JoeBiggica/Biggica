@@ -9,19 +9,33 @@
 }
 
 .logo {
-	font-size: 40px;
+	font-size: 28px;
+	font-weight: bold;
 }
 
 .menu-container {
+	position: fixed;
+	top: 25px;
+	right: 60px;
+	
 	.button {
-		position: fixed;
-		background: $darkergrey;
 		width: 30px;
 	    height: 30px;
+	    background: $darkergrey;
 	    display: flex;
 	    justify-content: center;
 	}
 	ul.menu {
-		display: none;
+		margin-top: 20px;
+		padding: 12px 10px;
+		background: $white;
+	}
+
+	li {
+		font-size: 16px;
+
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
 	}
 }

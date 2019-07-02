@@ -989,7 +989,7 @@ function (_Component) {
     // }
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_5___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_header__WEBPACK_IMPORTED_MODULE_8__["default"], null), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("section", null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_herobanner__WEBPACK_IMPORTED_MODULE_9__["default"], {
-        text: "Joe Biggica"
+        text: "Web engineer specializing in front-end development and modern frameworks"
       })));
     }
   }], [{
@@ -1055,7 +1055,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/reuters/Engineering/Biggica/pages/Index.jsx */"./pages/Index.jsx");
+module.exports = __webpack_require__(/*! /Users/joebiggica/Engineering/Apps/Biggica/pages/Index.jsx */"./pages/Index.jsx");
 
 
 /***/ }),

@@ -40,34 +40,45 @@
   margin: 0 60px; }
 
 .Header-logo-1oDyD {
-  font-size: 40px; }
+  font-size: 28px;
+  font-weight: bold; }
 
-.Header-menu-container-2rqw1 .Header-button-3USmz {
+.Header-menu-container-2rqw1 {
   position: fixed;
-  background: #232323;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  justify-content: center; }
-
-.Header-menu-container-2rqw1 ul.Header-menu-sKL0B {
-  display: none; }
+  top: 25px;
+  right: 60px; }
+  .Header-menu-container-2rqw1 .Header-button-3USmz {
+    width: 30px;
+    height: 30px;
+    background: #232323;
+    display: flex;
+    justify-content: center; }
+  .Header-menu-container-2rqw1 ul.Header-menu-sKL0B {
+    margin-top: 20px;
+    padding: 12px 10px;
+    background: #fff; }
+  .Header-menu-container-2rqw1 li {
+    font-size: 16px; }
+    .Header-menu-container-2rqw1 li:not(:last-child) {
+      margin-bottom: 10px; }
 
 .HeroBanner-container-fYWwV {
   width: 100%;
   height: 100vh;
-  padding-bottom: 60px;
+  padding: 0 60px;
   background: #232323;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; }
+  justify-content: center;
+  align-items: center; }
 
 .HeroBanner-text-container-3UaLg {
-  display: flex;
-  justify-content: center; }
+  width: 50%;
+  text-align: center; }
 
 .HeroBanner-text-2io57 {
-  font-size: 50px;
+  font-size: 40px;
+  line-height: 1.3;
   color: #fff; }
 
 .styles-clearfix-2Rb3A:before,
@@ -82,7 +93,7 @@
   zoom: 1; }
 
 * {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Avenir', sans-serif;
   box-sizing: border-box;
   margin: 0; }
 
