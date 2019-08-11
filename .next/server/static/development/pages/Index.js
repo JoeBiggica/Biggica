@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -195,7 +195,9 @@ function (_PureComponent) {
         className: _Header_scss__WEBPACK_IMPORTED_MODULE_11___default()('container')
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: _Header_scss__WEBPACK_IMPORTED_MODULE_11___default()('logo')
-      }, "Joe Biggca"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
+        href: "/"
+      }, "Joe Biggca")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: _Header_scss__WEBPACK_IMPORTED_MODULE_11___default()('menu-container')
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_hamburgerbutton__WEBPACK_IMPORTED_MODULE_10__["default"], {
         className: _Header_scss__WEBPACK_IMPORTED_MODULE_11___default()('button'),
@@ -949,10 +951,10 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./pages/Projects.jsx":
-/*!****************************!*\
-  !*** ./pages/Projects.jsx ***!
-  \****************************/
+/***/ "./pages/Index.jsx":
+/*!*************************!*\
+  !*** ./pages/Index.jsx ***!
+  \*************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -987,18 +989,18 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var Projects =
+var Index =
 /*#__PURE__*/
 function (_Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Projects, _Component);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Index, _Component);
 
-  function Projects() {
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Projects);
+  function Index() {
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Index);
 
-    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Projects).apply(this, arguments));
+    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Index).apply(this, arguments));
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Projects, [{
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Index, [{
     key: "render",
     // toggle = () => {
     // 	const { toggleTap } = this.props
@@ -1014,7 +1016,7 @@ function (_Component) {
     // }
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_5___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_header__WEBPACK_IMPORTED_MODULE_8__["default"], null), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("section", null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_herobanner__WEBPACK_IMPORTED_MODULE_9__["default"], {
-        text: "Projects"
+        text: "Web engineer specializing in front-end development and modern frameworks"
       })));
     }
   }], [{
@@ -1027,7 +1029,7 @@ function (_Component) {
     }
   }]);
 
-  return Projects;
+  return Index;
 }(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
 
 var mapStateToProps = function mapStateToProps(state) {
@@ -1041,7 +1043,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
   return {};
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_6__["connect"])(mapStateToProps, mapDispatchToProps)(Projects));
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_6__["connect"])(mapStateToProps, mapDispatchToProps)(Index));
 
 /***/ }),
 
@@ -1073,14 +1075,14 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 
 /***/ }),
 
-/***/ 6:
-/*!**********************************!*\
-  !*** multi ./pages/Projects.jsx ***!
-  \**********************************/
+/***/ 3:
+/*!*******************************!*\
+  !*** multi ./pages/Index.jsx ***!
+  \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/joebiggica/Engineering/Apps/Biggica/pages/Projects.jsx */"./pages/Projects.jsx");
+module.exports = __webpack_require__(/*! /Users/joebiggica/Engineering/Apps/Biggica/pages/Index.jsx */"./pages/Index.jsx");
 
 
 /***/ }),
@@ -1218,4 +1220,4 @@ module.exports = require("redux");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=Projects.js.map
+//# sourceMappingURL=Index.js.map

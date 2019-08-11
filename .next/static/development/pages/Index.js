@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/Projects.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/Index.js"],{
 
 /***/ "./components/header/Header.jsx":
 /*!**************************************!*\
@@ -91,7 +91,9 @@ function (_PureComponent) {
         className: _Header_scss__WEBPACK_IMPORTED_MODULE_11___default()('container')
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: _Header_scss__WEBPACK_IMPORTED_MODULE_11___default()('logo')
-      }, "Joe Biggca"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
+        href: "/"
+      }, "Joe Biggca")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: _Header_scss__WEBPACK_IMPORTED_MODULE_11___default()('menu-container')
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_hamburgerbutton__WEBPACK_IMPORTED_MODULE_10__["default"], {
         className: _Header_scss__WEBPACK_IMPORTED_MODULE_11___default()('button'),
@@ -2949,21 +2951,21 @@ module.exports = invariant;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FProjects&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FApps%2FBiggica%2Fpages%2FProjects.jsx!./":
-/*!************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FProjects&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FApps%2FBiggica%2Fpages%2FProjects.jsx ***!
-  \************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FIndex&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FApps%2FBiggica%2Fpages%2FIndex.jsx!./":
+/*!******************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FIndex&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FApps%2FBiggica%2Fpages%2FIndex.jsx ***!
+  \******************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/Projects", function() {
-      var page = __webpack_require__(/*! ./pages/Projects.jsx */ "./pages/Projects.jsx")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/Index", function() {
+      var page = __webpack_require__(/*! ./pages/Index.jsx */ "./pages/Index.jsx")
       if(true) {
-        module.hot.accept(/*! ./pages/Projects.jsx */ "./pages/Projects.jsx", function() {
-          if(!next.router.components["/Projects"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/Projects.jsx */ "./pages/Projects.jsx")
-          next.router.update("/Projects", updatedPage.default || updatedPage)
+        module.hot.accept(/*! ./pages/Index.jsx */ "./pages/Index.jsx", function() {
+          if(!next.router.components["/Index"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/Index.jsx */ "./pages/Index.jsx")
+          next.router.update("/Index", updatedPage.default || updatedPage)
         })
       }
       return { page: page.default || page }
@@ -7048,10 +7050,10 @@ module.exports = function(originalModule) {
 
 /***/ }),
 
-/***/ "./pages/Projects.jsx":
-/*!****************************!*\
-  !*** ./pages/Projects.jsx ***!
-  \****************************/
+/***/ "./pages/Index.jsx":
+/*!*************************!*\
+  !*** ./pages/Index.jsx ***!
+  \*************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -7084,18 +7086,18 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var Projects =
+var Index =
 /*#__PURE__*/
 function (_Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Projects, _Component);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Index, _Component);
 
-  function Projects() {
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Projects);
+  function Index() {
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Index);
 
-    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Projects).apply(this, arguments));
+    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Index).apply(this, arguments));
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Projects, [{
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Index, [{
     key: "render",
     // toggle = () => {
     // 	const { toggleTap } = this.props
@@ -7111,7 +7113,7 @@ function (_Component) {
     // }
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_5___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_header__WEBPACK_IMPORTED_MODULE_8__["default"], null), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("section", null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_herobanner__WEBPACK_IMPORTED_MODULE_9__["default"], {
-        text: "Projects"
+        text: "Web engineer specializing in front-end development and modern frameworks"
       })));
     }
   }], [{
@@ -7124,7 +7126,7 @@ function (_Component) {
     }
   }]);
 
-  return Projects;
+  return Index;
 }(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
 
 var mapStateToProps = function mapStateToProps(state) {
@@ -7138,18 +7140,18 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
   return {};
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_6__["connect"])(mapStateToProps, mapDispatchToProps)(Projects));
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_6__["connect"])(mapStateToProps, mapDispatchToProps)(Index));
 
 /***/ }),
 
-/***/ 8:
-/*!****************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2FProjects&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FApps%2FBiggica%2Fpages%2FProjects.jsx ***!
-  \****************************************************************************************************************************************************/
+/***/ 0:
+/*!**********************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2FIndex&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FApps%2FBiggica%2Fpages%2FIndex.jsx ***!
+  \**********************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2FProjects&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FApps%2FBiggica%2Fpages%2FProjects.jsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FProjects&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FApps%2FBiggica%2Fpages%2FProjects.jsx!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2FIndex&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FApps%2FBiggica%2Fpages%2FIndex.jsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FIndex&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FApps%2FBiggica%2Fpages%2FIndex.jsx!./");
 
 
 /***/ }),
@@ -7165,5 +7167,5 @@ module.exports = dll_1aef2d0bbc0d334d831c;
 
 /***/ })
 
-},[[8,"static/runtime/webpack.js","styles"]]]);
-//# sourceMappingURL=Projects.js.map
+},[[0,"static/runtime/webpack.js","styles"]]]);
+//# sourceMappingURL=Index.js.map

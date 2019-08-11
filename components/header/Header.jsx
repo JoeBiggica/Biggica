@@ -49,7 +49,9 @@ class Header extends PureComponent {
 
 		return (
 			<header className={styles('container')}>
-				<div className={styles('logo')}>Joe Biggca</div>
+				<div className={styles('logo')}>
+					<a href='/'>Joe Biggca</a>
+				</div>
 				<div className={styles('menu-container')}>
 					<HamburgerButton className={styles('button')} onClick={this.onClick} />
 					<ul className={styles('menu', {'active': this.state.menu_active})}>

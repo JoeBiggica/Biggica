@@ -20,16 +20,17 @@
 
 .menu-container {
 	position: fixed;
-	top: 25px;
+	top: 23px;
 	right: 60px;
 
 	.button {
-		width: 30px;
-	    height: 30px;
+		width: 34px;
+	    height: 34px;
 	    background: $white;
 	    display: flex;
 	    justify-content: center;
 	}
+
 	ul.menu {
 		margin-top: 20px;
 		padding: 12px 10px;

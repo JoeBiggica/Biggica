@@ -91,7 +91,9 @@ function (_PureComponent) {
         className: _Header_scss__WEBPACK_IMPORTED_MODULE_11___default()('container')
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: _Header_scss__WEBPACK_IMPORTED_MODULE_11___default()('logo')
-      }, "Joe Biggca"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
+        href: "/"
+      }, "Joe Biggca")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: _Header_scss__WEBPACK_IMPORTED_MODULE_11___default()('menu-container')
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_hamburgerbutton__WEBPACK_IMPORTED_MODULE_10__["default"], {
         className: _Header_scss__WEBPACK_IMPORTED_MODULE_11___default()('button'),

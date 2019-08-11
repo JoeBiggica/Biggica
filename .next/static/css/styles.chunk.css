@@ -50,11 +50,11 @@
 
 .Header-menu-container-2rqw1 {
   position: fixed;
-  top: 25px;
+  top: 23px;
   right: 60px; }
   .Header-menu-container-2rqw1 .Header-button-3USmz {
-    width: 30px;
-    height: 30px;
+    width: 34px;
+    height: 34px;
     background: #fff;
     display: flex;
     justify-content: center; }
@@ -121,10 +121,10 @@ a {
   transition: color 0.25s cubic-bezier(0.42, 0, 0.58, 1);
   backface-visibility: hidden;
   text-decoration: none;
-  color: #666;
+  color: #333333;
   font-family: inherit; }
   a:hover {
-    color: #232323;
+    color: #005CAF;
     cursor: pointer; }
   a:focus {
     outline: none; }
