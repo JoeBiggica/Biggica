@@ -9,19 +9,24 @@
 }
 
 .logo {
+	position: fixed;
+	top: 17px;
+	left: 60px;
 	font-size: 28px;
 	font-weight: bold;
+	background: $white;
+	padding: 4px 8px;
 }
 
 .menu-container {
 	position: fixed;
 	top: 25px;
 	right: 60px;
-	
+
 	.button {
 		width: 30px;
 	    height: 30px;
-	    background: $darkergrey;
+	    background: $white;
 	    display: flex;
 	    justify-content: center;
 	}
@@ -29,10 +34,17 @@
 		margin-top: 20px;
 		padding: 12px 10px;
 		background: $white;
+		display: none;
+		position: absolute;
+   		right: 0;
+
+		&.active {
+			display: block;
+		}
 	}
 
 	li {
-		font-size: 16px;
+		font-size: 20px;
 
 		&:not(:last-child) {
 			margin-bottom: 10px;

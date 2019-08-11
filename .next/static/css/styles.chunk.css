@@ -12,7 +12,7 @@
   .HamburgerButton-hamburger-1b52a, .HamburgerButton-hamburger-1b52a:before, .HamburgerButton-hamburger-1b52a:after {
     width: 20px;
     height: 2px;
-    background-color: #fff;
+    background-color: #414141;
     border-radius: 3px;
     transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1); }
   .HamburgerButton-hamburger-1b52a:before, .HamburgerButton-hamburger-1b52a:after {
@@ -40,8 +40,13 @@
   margin: 0 60px; }
 
 .Header-logo-1oDyD {
+  position: fixed;
+  top: 17px;
+  left: 60px;
   font-size: 28px;
-  font-weight: bold; }
+  font-weight: bold;
+  background: #fff;
+  padding: 4px 8px; }
 
 .Header-menu-container-2rqw1 {
   position: fixed;
@@ -50,15 +55,20 @@
   .Header-menu-container-2rqw1 .Header-button-3USmz {
     width: 30px;
     height: 30px;
-    background: #232323;
+    background: #fff;
     display: flex;
     justify-content: center; }
   .Header-menu-container-2rqw1 ul.Header-menu-sKL0B {
     margin-top: 20px;
     padding: 12px 10px;
-    background: #fff; }
+    background: #fff;
+    display: none;
+    position: absolute;
+    right: 0; }
+    .Header-menu-container-2rqw1 ul.Header-menu-sKL0B.Header-active-1uMAQ {
+      display: block; }
   .Header-menu-container-2rqw1 li {
-    font-size: 16px; }
+    font-size: 20px; }
     .Header-menu-container-2rqw1 li:not(:last-child) {
       margin-bottom: 10px; }
 
