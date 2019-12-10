@@ -1,6 +1,6 @@
 {
-	"name": "nextjs",
-	"author": "Gunther Koo",
+	"name": "portfolio",
+	"author": "Joe Biggica",
 	"version": "1.0.0",
 	"main": "server.js",
 	"scripts": {

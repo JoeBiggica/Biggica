@@ -1,12 +1,14 @@
 {
 	"version": 2,
-	"name": "nextjs",
+	"name": "portfolio",
 	"builds": [{
 		"src": "package.json",
 		"use": "@now/next"
-	}]
-	// "routes": [{ 
-	// 	"src": "/movie/(?<id>[^/]+)", 
-	// 	"dest": "detail-page/DetailPage?id=$id"
-	// }]
+	}],
+	"routes": [
+		{"src": "/", "dest": "Index"},
+		{"src": "/skills", "dest": "Skills"},
+		{"src": "/projects", "dest": "Projects"},
+		{"src": "/contact", "dest": "Contact"}
+	]
 }

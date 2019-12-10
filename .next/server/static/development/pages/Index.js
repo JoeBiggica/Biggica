@@ -1082,7 +1082,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/joebiggica/Engineering/Apps/Biggica/pages/Index.jsx */"./pages/Index.jsx");
+module.exports = __webpack_require__(/*! /Users/reuters/Engineering/Biggica/pages/Index.jsx */"./pages/Index.jsx");
 
 
 /***/ }),
