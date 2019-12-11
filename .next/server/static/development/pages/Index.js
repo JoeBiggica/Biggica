@@ -173,8 +173,8 @@ function (_PureComponent) {
     });
 
     _this.menu_items = [{
-      name: 'Skills',
-      id: 'skills'
+      name: 'Resume',
+      id: 'resume'
     }, {
       name: 'Projects',
       id: 'projects'
