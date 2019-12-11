@@ -30,7 +30,7 @@ module.exports = {"resume-container":"Resume-resume-container-1GY0j"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1576083161450");
+            injectCss(link, link.href.split("?")[0] + "?unix=1576083819830");
           });
       }
     }
@@ -67,4 +67,4 @@ module.exports = {"resume-container":"Resume-resume-container-1GY0j"};;
 /***/ })
 
 })
-//# sourceMappingURL=styles.ea9a507e41354c04c66b.hot-update.js.map
+//# sourceMappingURL=styles.43efe81ba757d2435038.hot-update.js.map
