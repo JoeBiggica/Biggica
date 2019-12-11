@@ -114,7 +114,7 @@ module.exports = {"container":"Header-container-3ZpuA","logo":"Header-logo-1oDyD
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1576083815665");
+            injectCss(link, link.href.split("?")[0] + "?unix=1576100644044");
           });
       }
     }
@@ -190,7 +190,7 @@ module.exports = {"container":"HeroBanner-container-fYWwV","text-container":"Her
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1576083815658");
+            injectCss(link, link.href.split("?")[0] + "?unix=1576100519043");
           });
       }
     }
@@ -266,7 +266,7 @@ module.exports = {"clearfix":"styles-clearfix-2Rb3A"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1576083815813");
+            injectCss(link, link.href.split("?")[0] + "?unix=1576099209224");
           });
       }
     }

@@ -1,17 +1,24 @@
+@import 'styles/_breakpoints.scss';
 @import 'styles/_colors.scss';
 
 .container {
 	height: 75px;
+	position: relative;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin: 0 60px;
+
+	@include for-phone-only {
+		height: 60px;
+		margin: 0 20px;
+	}
 }
 
 .logo {
-	position: fixed;
-	top: 17px;
-	left: 60px;
+	// position: fixed;
+	// top: 17px;
+	// left: 0;
 	font-size: 28px;
 	font-weight: bold;
 	background: $white;
@@ -19,9 +26,9 @@
 }
 
 .menu-container {
-	position: fixed;
-	top: 23px;
-	right: 60px;
+	// position: fixed;
+	// top: 23px;
+	// right: 0;
 
 	.button {
 		width: 34px;

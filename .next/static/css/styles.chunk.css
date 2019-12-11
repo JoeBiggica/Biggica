@@ -34,43 +34,43 @@
 
 .Header-container-3ZpuA {
   height: 75px;
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 60px; }
+  @media (max-width: 599px) {
+    .Header-container-3ZpuA {
+      height: 60px;
+      margin: 0 20px; } }
 
 .Header-logo-1oDyD {
-  position: fixed;
-  top: 17px;
-  left: 60px;
   font-size: 28px;
   font-weight: bold;
   background: #fff;
   padding: 4px 8px; }
 
-.Header-menu-container-2rqw1 {
-  position: fixed;
-  top: 23px;
-  right: 60px; }
-  .Header-menu-container-2rqw1 .Header-button-3USmz {
-    width: 34px;
-    height: 34px;
-    background: #fff;
-    display: flex;
-    justify-content: center; }
-  .Header-menu-container-2rqw1 ul.Header-menu-sKL0B {
-    margin-top: 20px;
-    padding: 12px 10px;
-    background: #fff;
-    display: none;
-    position: absolute;
-    right: 0; }
-    .Header-menu-container-2rqw1 ul.Header-menu-sKL0B.Header-active-1uMAQ {
-      display: block; }
-  .Header-menu-container-2rqw1 li {
-    font-size: 20px; }
-    .Header-menu-container-2rqw1 li:not(:last-child) {
-      margin-bottom: 10px; }
+.Header-menu-container-2rqw1 .Header-button-3USmz {
+  width: 34px;
+  height: 34px;
+  background: #fff;
+  display: flex;
+  justify-content: center; }
+
+.Header-menu-container-2rqw1 ul.Header-menu-sKL0B {
+  margin-top: 20px;
+  padding: 12px 10px;
+  background: #fff;
+  display: none;
+  position: absolute;
+  right: 0; }
+  .Header-menu-container-2rqw1 ul.Header-menu-sKL0B.Header-active-1uMAQ {
+    display: block; }
+
+.Header-menu-container-2rqw1 li {
+  font-size: 20px; }
+  .Header-menu-container-2rqw1 li:not(:last-child) {
+    margin-bottom: 10px; }
 
 .HeroBanner-container-fYWwV {
   width: 100%;
@@ -81,15 +81,27 @@
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  @media (max-width: 599px) {
+    .HeroBanner-container-fYWwV {
+      padding: 0 20px;
+      justify-content: flex-start;
+      align-items: center; } }
 
 .HeroBanner-text-container-3UaLg {
   width: 50%;
   text-align: center; }
+  @media (max-width: 599px) {
+    .HeroBanner-text-container-3UaLg {
+      width: 100%;
+      margin-top: 60px; } }
 
 .HeroBanner-text-2io57 {
   font-size: 40px;
   line-height: 1.3;
   color: #fff; }
+  @media (max-width: 599px) {
+    .HeroBanner-text-2io57 {
+      font-size: 24px; } }
 
 .styles-clearfix-2Rb3A:before,
 .styles-clearfix-2Rb3A:after {
