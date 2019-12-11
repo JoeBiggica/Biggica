@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/Index.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/resume.js"],{
 
 /***/ "./components/header/Header.jsx":
 /*!**************************************!*\
@@ -69,8 +69,8 @@ function (_PureComponent) {
     });
 
     _this.menu_items = [{
-      name: 'Skills',
-      id: 'skills'
+      name: 'Resume',
+      id: 'resume'
     }, {
       name: 'Projects',
       id: 'projects'
@@ -2951,21 +2951,21 @@ module.exports = invariant;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FIndex&absolutePagePath=%2FUsers%2Freuters%2FEngineering%2FBiggica%2Fpages%2FIndex.jsx!./":
-/*!********************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FIndex&absolutePagePath=%2FUsers%2Freuters%2FEngineering%2FBiggica%2Fpages%2FIndex.jsx ***!
-  \********************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fresume&absolutePagePath=%2FUsers%2Freuters%2FEngineering%2FBiggica%2Fpages%2Fresume.jsx!./":
+/*!**********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fresume&absolutePagePath=%2FUsers%2Freuters%2FEngineering%2FBiggica%2Fpages%2Fresume.jsx ***!
+  \**********************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/Index", function() {
-      var page = __webpack_require__(/*! ./pages/Index.jsx */ "./pages/Index.jsx")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/resume", function() {
+      var page = __webpack_require__(/*! ./pages/resume.jsx */ "./pages/resume.jsx")
       if(true) {
-        module.hot.accept(/*! ./pages/Index.jsx */ "./pages/Index.jsx", function() {
-          if(!next.router.components["/Index"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/Index.jsx */ "./pages/Index.jsx")
-          next.router.update("/Index", updatedPage.default || updatedPage)
+        module.hot.accept(/*! ./pages/resume.jsx */ "./pages/resume.jsx", function() {
+          if(!next.router.components["/resume"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/resume.jsx */ "./pages/resume.jsx")
+          next.router.update("/resume", updatedPage.default || updatedPage)
         })
       }
       return { page: page.default || page }
@@ -7050,10 +7050,10 @@ module.exports = function(originalModule) {
 
 /***/ }),
 
-/***/ "./pages/Index.jsx":
-/*!*************************!*\
-  !*** ./pages/Index.jsx ***!
-  \*************************/
+/***/ "./pages/resume.jsx":
+/*!**************************!*\
+  !*** ./pages/resume.jsx ***!
+  \**************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -7072,6 +7072,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_herobanner__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/herobanner */ "./components/herobanner/index.js");
 /* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../styles/styles.scss */ "./styles/styles.scss");
 /* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_styles_styles_scss__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _Resume_scss__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./Resume.scss */ "./pages/Resume.scss");
+/* harmony import */ var _Resume_scss__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_Resume_scss__WEBPACK_IMPORTED_MODULE_11__);
 
 
 
@@ -7086,18 +7088,19 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var Index =
+
+var Resume =
 /*#__PURE__*/
 function (_Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Index, _Component);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Resume, _Component);
 
-  function Index() {
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Index);
+  function Resume() {
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Resume);
 
-    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Index).apply(this, arguments));
+    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Resume).apply(this, arguments));
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Index, [{
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Resume, [{
     key: "render",
     // toggle = () => {
     // 	const { toggleTap } = this.props
@@ -7112,9 +7115,14 @@ function (_Component) {
     // 	decrementCount()
     // }
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_5___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_header__WEBPACK_IMPORTED_MODULE_8__["default"], null), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("section", null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_herobanner__WEBPACK_IMPORTED_MODULE_9__["default"], {
-        text: "Web engineer specializing in front-end development and modern frameworks"
-      })));
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_5___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_header__WEBPACK_IMPORTED_MODULE_8__["default"], null), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("section", null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("object", {
+        data: "/static/resume.pdf",
+        type: "application/pdf",
+        className: _Resume_scss__WEBPACK_IMPORTED_MODULE_11___default()('resume-container')
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("embed", {
+        src: "/static/resume.pdf",
+        type: "application/pdf"
+      }))));
     }
   }], [{
     key: "getInitialProps",
@@ -7126,7 +7134,7 @@ function (_Component) {
     }
   }]);
 
-  return Index;
+  return Resume;
 }(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
 
 var mapStateToProps = function mapStateToProps(state) {
@@ -7140,18 +7148,18 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
   return {};
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_6__["connect"])(mapStateToProps, mapDispatchToProps)(Index));
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_6__["connect"])(mapStateToProps, mapDispatchToProps)(Resume));
 
 /***/ }),
 
-/***/ 0:
-/*!************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2FIndex&absolutePagePath=%2FUsers%2Freuters%2FEngineering%2FBiggica%2Fpages%2FIndex.jsx ***!
-  \************************************************************************************************************************************/
+/***/ 8:
+/*!**************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fresume&absolutePagePath=%2FUsers%2Freuters%2FEngineering%2FBiggica%2Fpages%2Fresume.jsx ***!
+  \**************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2FIndex&absolutePagePath=%2FUsers%2Freuters%2FEngineering%2FBiggica%2Fpages%2FIndex.jsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FIndex&absolutePagePath=%2FUsers%2Freuters%2FEngineering%2FBiggica%2Fpages%2FIndex.jsx!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fresume&absolutePagePath=%2FUsers%2Freuters%2FEngineering%2FBiggica%2Fpages%2Fresume.jsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fresume&absolutePagePath=%2FUsers%2Freuters%2FEngineering%2FBiggica%2Fpages%2Fresume.jsx!./");
 
 
 /***/ }),
@@ -7167,5 +7175,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js","styles"]]]);
-//# sourceMappingURL=Index.js.map
+},[[8,"static/runtime/webpack.js","styles"]]]);
+//# sourceMappingURL=resume.js.map

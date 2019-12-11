@@ -5,7 +5,7 @@ export default class Error extends Component {
 		return (
 			<React.Fragment>
 				<div>
-					Error on this page...
+					Page not found.
 				</div>
 			</React.Fragment>
 		)

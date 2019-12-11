@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -173,8 +173,8 @@ function (_PureComponent) {
     });
 
     _this.menu_items = [{
-      name: 'Skills',
-      id: 'skills'
+      name: 'Resume',
+      id: 'resume'
     }, {
       name: 'Projects',
       id: 'projects'
@@ -938,6 +938,19 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/locals.js?!./node_modules/sass-loader/lib/loader.js?!./pages/Resume.scss":
+/*!****************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/locals.js??ref--6-0!./node_modules/sass-loader/lib/loader.js??ref--6-1!./pages/Resume.scss ***!
+  \****************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"resume-container": "Resume-resume-container-1GY0j"
+};
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/locals.js?!./node_modules/sass-loader/lib/loader.js?!./styles/styles.scss":
 /*!*****************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/locals.js??ref--6-0!./node_modules/sass-loader/lib/loader.js??ref--6-1!./styles/styles.scss ***!
@@ -951,10 +964,38 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./pages/Index.jsx":
-/*!*************************!*\
-  !*** ./pages/Index.jsx ***!
-  \*************************/
+/***/ "./pages/Resume.scss":
+/*!***************************!*\
+  !*** ./pages/Resume.scss ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+        // classnames-loader: automatically bind css-modules to classnames
+        var classNames = __webpack_require__(/*! ../node_modules/classnames/bind.js */ "./node_modules/classnames/bind.js");
+        var locals = __webpack_require__(/*! !../node_modules/css-loader/locals.js??ref--6-0!../node_modules/sass-loader/lib/loader.js??ref--6-1!./Resume.scss */ "./node_modules/css-loader/locals.js?!./node_modules/sass-loader/lib/loader.js?!./pages/Resume.scss");
+        var css = classNames.bind(locals);
+        for (var style in locals) {
+            if (!locals.hasOwnProperty(style)) {
+                continue;
+            }
+            if (typeof Object.defineProperty === 'function') {
+                Object.defineProperty(css, style, {value: locals[style]});
+            }
+            else {
+                css[style] = locals[style];
+            }
+        }
+        module.exports = css;
+    
+
+/***/ }),
+
+/***/ "./pages/resume.jsx":
+/*!**************************!*\
+  !*** ./pages/resume.jsx ***!
+  \**************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -975,6 +1016,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_herobanner__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/herobanner */ "./components/herobanner/index.js");
 /* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../styles/styles.scss */ "./styles/styles.scss");
 /* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_styles_styles_scss__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _Resume_scss__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./Resume.scss */ "./pages/Resume.scss");
+/* harmony import */ var _Resume_scss__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_Resume_scss__WEBPACK_IMPORTED_MODULE_11__);
 
 
 
@@ -989,18 +1032,19 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var Index =
+
+var Resume =
 /*#__PURE__*/
 function (_Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Index, _Component);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Resume, _Component);
 
-  function Index() {
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Index);
+  function Resume() {
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Resume);
 
-    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Index).apply(this, arguments));
+    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Resume).apply(this, arguments));
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Index, [{
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Resume, [{
     key: "render",
     // toggle = () => {
     // 	const { toggleTap } = this.props
@@ -1015,9 +1059,14 @@ function (_Component) {
     // 	decrementCount()
     // }
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_5___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_header__WEBPACK_IMPORTED_MODULE_8__["default"], null), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("section", null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_herobanner__WEBPACK_IMPORTED_MODULE_9__["default"], {
-        text: "Web engineer specializing in front-end development and modern frameworks"
-      })));
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_5___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_header__WEBPACK_IMPORTED_MODULE_8__["default"], null), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("section", null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("object", {
+        data: "/static/resume.pdf",
+        type: "application/pdf",
+        className: _Resume_scss__WEBPACK_IMPORTED_MODULE_11___default()('resume-container')
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("embed", {
+        src: "/static/resume.pdf",
+        type: "application/pdf"
+      }))));
     }
   }], [{
     key: "getInitialProps",
@@ -1029,7 +1078,7 @@ function (_Component) {
     }
   }]);
 
-  return Index;
+  return Resume;
 }(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
 
 var mapStateToProps = function mapStateToProps(state) {
@@ -1043,7 +1092,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
   return {};
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_6__["connect"])(mapStateToProps, mapDispatchToProps)(Index));
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_6__["connect"])(mapStateToProps, mapDispatchToProps)(Resume));
 
 /***/ }),
 
@@ -1075,14 +1124,14 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 
 /***/ }),
 
-/***/ 3:
-/*!*******************************!*\
-  !*** multi ./pages/Index.jsx ***!
-  \*******************************/
+/***/ 6:
+/*!********************************!*\
+  !*** multi ./pages/resume.jsx ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/reuters/Engineering/Biggica/pages/Index.jsx */"./pages/Index.jsx");
+module.exports = __webpack_require__(/*! /Users/reuters/Engineering/Biggica/pages/resume.jsx */"./pages/resume.jsx");
 
 
 /***/ }),
@@ -1220,4 +1269,4 @@ module.exports = require("redux");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=Index.js.map
+//# sourceMappingURL=resume.js.map

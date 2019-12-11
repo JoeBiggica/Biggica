@@ -15,8 +15,8 @@ class Header extends PureComponent {
 
 		this.menu_items = [
 			{
-				name: 'Skills',
-				id: 'skills',
+				name: 'Resume',
+				id: 'resume',
 			},
 			{
 				name: 'Projects',
