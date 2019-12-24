@@ -34,6 +34,7 @@ class SiteHead extends PureComponent {
 			<Head>
 				<meta httpEquiv='X-UA-Compatible' content='IE=edge' />
 				<meta httpEquiv='x-dns-prefetch-control' content='on' />
+				<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
 				<meta name='robots' content='index, follow' />
 
 				<meta name='twitter:site' content='@JoeBiggica' />

@@ -114,7 +114,7 @@ module.exports = {"container":"Header-container-3ZpuA","logo":"Header-logo-1oDyD
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1576100644044");
+            injectCss(link, link.href.split("?")[0] + "?unix=1577129873147");
           });
       }
     }
@@ -152,7 +152,7 @@ module.exports = {"button":"HamburgerButton-button-3Kmsn","hamburger":"Hamburger
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1576083815746");
+            injectCss(link, link.href.split("?")[0] + "?unix=1577129525125");
           });
       }
     }
@@ -168,7 +168,7 @@ module.exports = {"button":"HamburgerButton-button-3Kmsn","hamburger":"Hamburger
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"container":"HeroBanner-container-fYWwV","text-container":"HeroBanner-text-container-3UaLg","text":"HeroBanner-text-2io57"};;
+module.exports = {"container":"HeroBanner-container-fYWwV","text-container":"HeroBanner-text-container-3UaLg","border":"HeroBanner-border-1PvtJ","text":"HeroBanner-text-2io57"};;
     if (true) {
       var injectCss = function injectCss(prev, href) {
         var link = prev.cloneNode();
@@ -190,7 +190,7 @@ module.exports = {"container":"HeroBanner-container-fYWwV","text-container":"Her
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1576100519043");
+            injectCss(link, link.href.split("?")[0] + "?unix=1577130607253");
           });
       }
     }
@@ -228,7 +228,7 @@ module.exports = {"resume-container":"Resume-resume-container-1GY0j"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1576083819830");
+            injectCss(link, link.href.split("?")[0] + "?unix=1577130417329");
           });
       }
     }
@@ -266,7 +266,7 @@ module.exports = {"clearfix":"styles-clearfix-2Rb3A"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1576099209224");
+            injectCss(link, link.href.split("?")[0] + "?unix=1577129525221");
           });
       }
     }

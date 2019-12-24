@@ -458,11 +458,15 @@ function (_PureComponent) {
     value: function render() {
       var _this$props = this.props,
           className = _this$props.className,
-          text = _this$props.text;
+          text = _this$props.text,
+          border = _this$props.border;
+      var text_container_classname = _HeroBanner_scss__WEBPACK_IMPORTED_MODULE_9___default()('text-container', {
+        border: 'border'
+      });
       return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         className: classnames__WEBPACK_IMPORTED_MODULE_8___default()(_HeroBanner_scss__WEBPACK_IMPORTED_MODULE_9___default()('container'), className)
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: _HeroBanner_scss__WEBPACK_IMPORTED_MODULE_9___default()('text-container')
+        className: text_container_classname
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("h1", {
         className: _HeroBanner_scss__WEBPACK_IMPORTED_MODULE_9___default()('text')
       }, this.props.text)));
@@ -473,7 +477,9 @@ function (_PureComponent) {
 }(react__WEBPACK_IMPORTED_MODULE_6__["PureComponent"]);
 
 Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_5__["default"])(HeroBanner, "propTypes", {
-  className: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string
+  className: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string,
+  text: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string,
+  border: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.bool
 });
 
 /* harmony default export */ __webpack_exports__["default"] = (HeroBanner);
@@ -933,6 +939,7 @@ module.exports = {
 module.exports = {
 	"container": "HeroBanner-container-fYWwV",
 	"text-container": "HeroBanner-text-container-3UaLg",
+	"border": "HeroBanner-border-1PvtJ",
 	"text": "HeroBanner-text-2io57"
 };
 
@@ -1016,7 +1023,8 @@ function (_Component) {
     // }
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_5___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_header__WEBPACK_IMPORTED_MODULE_8__["default"], null), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("section", null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_herobanner__WEBPACK_IMPORTED_MODULE_9__["default"], {
-        text: "Web engineer specializing in front-end development and modern frameworks"
+        text: "Web engineer specializing in front-end development and modern frameworks",
+        border: true
       })));
     }
   }], [{
@@ -1082,7 +1090,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/reuters/Engineering/Biggica/pages/Index.jsx */"./pages/Index.jsx");
+module.exports = __webpack_require__(/*! /Users/joebiggica/Engineering/Apps/Biggica/pages/Index.jsx */"./pages/Index.jsx");
 
 
 /***/ }),

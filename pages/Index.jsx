@@ -34,7 +34,10 @@ class Index extends Component {
 			<>
 				<Header />
 				<section>
-					<HeroBanner text='Web engineer specializing in front-end development and modern frameworks' />
+					<HeroBanner 
+						text='Web engineer specializing in front-end development and modern frameworks' 
+						border
+					/>
 				</section>
 			</>
 		)
