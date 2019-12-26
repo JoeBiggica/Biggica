@@ -110,29 +110,59 @@
   position: relative; }
 
 .Feature-inner-container-1OeTM {
-  padding: 70px 60px;
+  padding: 40px 30px;
   display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse; }
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center; }
+  @media (min-width: 600px) {
+    .Feature-inner-container-1OeTM {
+      padding: 70px 60px;
+      justify-content: space-between;
+      align-items: flex-start; }
+      .Feature-inner-container-1OeTM.Feature-left-1qNbH {
+        flex-direction: row; }
+      .Feature-inner-container-1OeTM.Feature-right-2OAXo {
+        flex-direction: row-reverse; } }
 
 .Feature-title-description-1u7IQ {
-  width: 50%;
-  color: white; }
+  width: 100%;
+  color: white;
+  text-align: center; }
+  @media (min-width: 600px) {
+    .Feature-title-description-1u7IQ {
+      width: 50%; }
+      .Feature-title-description-1u7IQ.Feature-left-1qNbH {
+        text-align: left;
+        padding-right: 30px; }
+      .Feature-title-description-1u7IQ.Feature-right-2OAXo {
+        text-align: right;
+        padding-left: 30px; } }
   .Feature-title-description-1u7IQ .Feature-title-34dMt {
     display: inline-block;
-    font-size: 36px;
+    font-size: 24px;
     margin-bottom: 20px; }
+    @media (min-width: 600px) {
+      .Feature-title-description-1u7IQ .Feature-title-34dMt {
+        font-size: 36px; } }
   .Feature-title-description-1u7IQ .Feature-description-2dTj5 {
-    font-size: 18px; }
+    font-size: 16px;
+    margin-bottom: 20px; }
+    @media (min-width: 600px) {
+      .Feature-title-description-1u7IQ .Feature-description-2dTj5 {
+        font-size: 18px; } }
 
 .Feature-image-container-2d9s9 {
   position: relative;
-  width: 50%; }
+  width: 100%; }
+  @media (min-width: 600px) {
+    .Feature-image-container-2d9s9 {
+      width: 50%; } }
   .Feature-image-container-2d9s9 .Feature-image-2l6yD {
     display: block;
     width: 100%;
     height: 0;
-    padding-bottom: 80%;
+    padding-bottom: 90%;
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: top; }

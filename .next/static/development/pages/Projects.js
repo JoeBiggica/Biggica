@@ -58,20 +58,20 @@ function (_PureComponent) {
           url = _this$props.url,
           text_position = _this$props.text_position,
           title_border = _this$props.title_border;
+      var inner_container_classname = _Feature_scss__WEBPACK_IMPORTED_MODULE_9___default()('inner-container', {
+        'left': text_position === 'left',
+        'right': text_position === 'right'
+      });
+      var title_description_classname = _Feature_scss__WEBPACK_IMPORTED_MODULE_9___default()('title-description', {
+        'left': text_position === 'left',
+        'right': text_position === 'right'
+      });
       var container_style = {
         backgroundImage: background_image && "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(".concat(background_image, ")")
       };
       var image_style = {
         backgroundImage: image && "url(".concat(image, ")"),
         border: image && "3px solid ".concat(color)
-      };
-      var inner_container_style = {
-        flexDirection: text_position === 'right' ? 'row-reverse' : 'row'
-      };
-      var title_description_style = {
-        textAlign: text_position === 'right' ? 'right' : 'left',
-        paddingLeft: text_position === 'right' && '20px',
-        paddingRight: text_position === 'left' && '20px'
       };
       var title_style = {
         border: title_border && "2px solid ".concat(color),
@@ -84,11 +84,9 @@ function (_PureComponent) {
         className: classnames__WEBPACK_IMPORTED_MODULE_8___default()(_Feature_scss__WEBPACK_IMPORTED_MODULE_9___default()('container'), className),
         style: container_style
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: _Feature_scss__WEBPACK_IMPORTED_MODULE_9___default()('inner-container'),
-        style: inner_container_style
+        className: inner_container_classname
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: _Feature_scss__WEBPACK_IMPORTED_MODULE_9___default()('title-description'),
-        style: title_description_style
+        className: title_description_classname
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("h3", {
         className: _Feature_scss__WEBPACK_IMPORTED_MODULE_9___default()('title'),
         style: title_style

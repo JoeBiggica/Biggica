@@ -120,7 +120,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"container":"Feature-container-TXDFJ","inner-container":"Feature-inner-container-1OeTM","title-description":"Feature-title-description-1u7IQ","title":"Feature-title-34dMt","description":"Feature-description-2dTj5","image-container":"Feature-image-container-2d9s9","image":"Feature-image-2l6yD","hover-background":"Feature-hover-background-o9S0Z"};;
+module.exports = {"container":"Feature-container-TXDFJ","inner-container":"Feature-inner-container-1OeTM","left":"Feature-left-1qNbH","right":"Feature-right-2OAXo","title-description":"Feature-title-description-1u7IQ","title":"Feature-title-34dMt","description":"Feature-description-2dTj5","image-container":"Feature-image-container-2d9s9","image":"Feature-image-2l6yD","hover-background":"Feature-hover-background-o9S0Z"};;
     if (true) {
       var injectCss = function injectCss(prev, href) {
         var link = prev.cloneNode();
@@ -142,7 +142,7 @@ module.exports = {"container":"Feature-container-TXDFJ","inner-container":"Featu
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1577395714359");
+            injectCss(link, link.href.split("?")[0] + "?unix=1577399644165");
           });
       }
     }

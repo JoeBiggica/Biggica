@@ -38,6 +38,16 @@ class Feature extends PureComponent {
 			title_border,
 		} = this.props;
 
+		const inner_container_classname = styles('inner-container', {
+			'left': text_position === 'left',
+			'right': text_position === 'right',
+		});
+
+		const title_description_classname = styles('title-description', {
+			'left': text_position === 'left',
+			'right': text_position === 'right',
+		});
+
 		const container_style = {
 			backgroundImage: background_image && `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${background_image})`
 		};
@@ -45,16 +55,6 @@ class Feature extends PureComponent {
 		const image_style = {
 			backgroundImage: image && `url(${image})`,
 			border: image && `3px solid ${color}`,
-		};
-
-		const inner_container_style = {
-			flexDirection: text_position === 'right' ? 'row-reverse' : 'row',
-		};
-
-		const title_description_style = {
-			textAlign: text_position === 'right' ? 'right' : 'left',
-			paddingLeft: text_position === 'right' && '20px',
-			paddingRight: text_position === 'left' && '20px',
 		};
 
 		const title_style = {
@@ -71,13 +71,8 @@ class Feature extends PureComponent {
 				className={classnames(styles('container'), className)} 
 				style={container_style}
 			>
-				<div 
-					className={styles('inner-container')} 
-					style={inner_container_style}>
-					<div 
-						className={styles('title-description')} 
-						style={title_description_style}
-					>
+				<div className={inner_container_classname}>
+					<div className={title_description_classname}>
 						<h3 
 							className={styles('title')} 
 							style={title_style}
