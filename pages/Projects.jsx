@@ -41,7 +41,7 @@ class Projects extends Component {
 						color='#499324'
 						background_image={'static/artichoke_background.png'}
 						image={'static/artichoke_site.png'}
-						url='//www.artichoke.design'
+						url='www.artichoke.design'
 						text_position='left'
 						title_border
 					/>

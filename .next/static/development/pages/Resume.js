@@ -1,153 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/Projects.js"],{
-
-/***/ "./components/feature/Feature.jsx":
-/*!****************************************!*\
-  !*** ./components/feature/Feature.jsx ***!
-  \****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _Feature_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Feature.scss */ "./components/feature/Feature.scss");
-/* harmony import */ var _Feature_scss__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_Feature_scss__WEBPACK_IMPORTED_MODULE_9__);
-
-
-
-
-
-
-
-
-
-
-
-var Feature =
-/*#__PURE__*/
-function (_PureComponent) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Feature, _PureComponent);
-
-  function Feature() {
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Feature);
-
-    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Feature).apply(this, arguments));
-  }
-
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Feature, [{
-    key: "render",
-    value: function render() {
-      var _this$props = this.props,
-          className = _this$props.className,
-          title = _this$props.title,
-          description = _this$props.description,
-          color = _this$props.color,
-          background_image = _this$props.background_image,
-          image = _this$props.image,
-          url = _this$props.url,
-          text_position = _this$props.text_position,
-          title_border = _this$props.title_border;
-      var inner_container_classname = _Feature_scss__WEBPACK_IMPORTED_MODULE_9___default()('inner-container', {
-        'left': text_position === 'left',
-        'right': text_position === 'right'
-      });
-      var title_description_classname = _Feature_scss__WEBPACK_IMPORTED_MODULE_9___default()('title-description', {
-        'left': text_position === 'left',
-        'right': text_position === 'right'
-      });
-      var container_style = {
-        backgroundImage: background_image && "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(".concat(background_image, ")")
-      };
-      var image_style = {
-        backgroundImage: image && "url(".concat(image, ")"),
-        border: image && "3px solid ".concat(color)
-      };
-      var title_style = {
-        border: title_border && "2px solid ".concat(color),
-        padding: '12px 14px'
-      };
-      var hover_background_style = {
-        boxShadow: "0 0 10px 10px ".concat(color)
-      };
-      return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: classnames__WEBPACK_IMPORTED_MODULE_8___default()(_Feature_scss__WEBPACK_IMPORTED_MODULE_9___default()('container'), className),
-        style: container_style
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: inner_container_classname
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: title_description_classname
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("h3", {
-        className: _Feature_scss__WEBPACK_IMPORTED_MODULE_9___default()('title'),
-        style: title_style
-      }, title), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("p", {
-        className: _Feature_scss__WEBPACK_IMPORTED_MODULE_9___default()('description')
-      }, description)), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: _Feature_scss__WEBPACK_IMPORTED_MODULE_9___default()('image-container')
-      }, url ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
-        href: url,
-        target: "_blank",
-        className: _Feature_scss__WEBPACK_IMPORTED_MODULE_9___default()('image'),
-        style: image_style
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: _Feature_scss__WEBPACK_IMPORTED_MODULE_9___default()('hover-background'),
-        style: hover_background_style
-      })) : react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: _Feature_scss__WEBPACK_IMPORTED_MODULE_9___default()('image'),
-        style: image_style
-      }))));
-    }
-  }]);
-
-  return Feature;
-}(react__WEBPACK_IMPORTED_MODULE_6__["PureComponent"]);
-
-Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_5__["default"])(Feature, "propTypes", {
-  className: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string,
-  title: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string,
-  description: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string,
-  color: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string,
-  background_image: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string,
-  image: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string,
-  url: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string,
-  text_position: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string,
-  title_border: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.bool
-});
-
-Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_5__["default"])(Feature, "defaultProps", {
-  color: '#ffffff',
-  text_position: 'right'
-});
-
-/* harmony default export */ __webpack_exports__["default"] = (Feature);
-
-/***/ }),
-
-/***/ "./components/feature/index.js":
-/*!*************************************!*\
-  !*** ./components/feature/index.js ***!
-  \*************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Feature__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Feature */ "./components/feature/Feature.jsx");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _Feature__WEBPACK_IMPORTED_MODULE_0__["default"]; });
-
-
-
-/***/ }),
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/Resume.js"],{
 
 /***/ "./components/header/Header.jsx":
 /*!**************************************!*\
@@ -3106,21 +2957,21 @@ module.exports = invariant;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FProjects&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FApps%2FBiggica%2Fpages%2FProjects.jsx!./":
-/*!************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FProjects&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FApps%2FBiggica%2Fpages%2FProjects.jsx ***!
-  \************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FResume&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FApps%2FBiggica%2Fpages%2FResume.jsx!./":
+/*!********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FResume&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FApps%2FBiggica%2Fpages%2FResume.jsx ***!
+  \********************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/Projects", function() {
-      var page = __webpack_require__(/*! ./pages/Projects.jsx */ "./pages/Projects.jsx")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/Resume", function() {
+      var page = __webpack_require__(/*! ./pages/Resume.jsx */ "./pages/Resume.jsx")
       if(true) {
-        module.hot.accept(/*! ./pages/Projects.jsx */ "./pages/Projects.jsx", function() {
-          if(!next.router.components["/Projects"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/Projects.jsx */ "./pages/Projects.jsx")
-          next.router.update("/Projects", updatedPage.default || updatedPage)
+        module.hot.accept(/*! ./pages/Resume.jsx */ "./pages/Resume.jsx", function() {
+          if(!next.router.components["/Resume"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/Resume.jsx */ "./pages/Resume.jsx")
+          next.router.update("/Resume", updatedPage.default || updatedPage)
         })
       }
       return { page: page.default || page }
@@ -7205,10 +7056,10 @@ module.exports = function(originalModule) {
 
 /***/ }),
 
-/***/ "./pages/Projects.jsx":
-/*!****************************!*\
-  !*** ./pages/Projects.jsx ***!
-  \****************************/
+/***/ "./pages/Resume.jsx":
+/*!**************************!*\
+  !*** ./pages/Resume.jsx ***!
+  \**************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -7225,9 +7076,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
 /* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/header */ "./components/header/index.js");
 /* harmony import */ var _components_herobanner__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/herobanner */ "./components/herobanner/index.js");
-/* harmony import */ var _components_feature__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/feature */ "./components/feature/index.js");
-/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../styles/styles.scss */ "./styles/styles.scss");
-/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_styles_styles_scss__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../styles/styles.scss */ "./styles/styles.scss");
+/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_styles_styles_scss__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _Resume_scss__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./Resume.scss */ "./pages/Resume.scss");
+/* harmony import */ var _Resume_scss__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_Resume_scss__WEBPACK_IMPORTED_MODULE_11__);
 
 
 
@@ -7243,40 +7095,26 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var Projects =
+var Resume =
 /*#__PURE__*/
 function (_Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Projects, _Component);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Resume, _Component);
 
-  function Projects() {
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Projects);
+  function Resume() {
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Resume);
 
-    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Projects).apply(this, arguments));
+    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Resume).apply(this, arguments));
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Projects, [{
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Resume, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_5___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_header__WEBPACK_IMPORTED_MODULE_8__["default"], null), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("section", null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_herobanner__WEBPACK_IMPORTED_MODULE_9__["default"], {
-        text: "Projects"
-      })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("section", null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_feature__WEBPACK_IMPORTED_MODULE_10__["default"], {
-        title: 'Reuters',
-        description: 'A global news site focused on world, politics, and market news',
-        color: "#FF8000",
-        background_image: 'static/reuters_background.png',
-        image: 'static/reuters_site.png',
-        url: "//www.reuters.com/markets/currencies",
-        text_position: "right",
-        title_border: true
-      })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("section", null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_feature__WEBPACK_IMPORTED_MODULE_10__["default"], {
-        title: 'Artichoke Designs',
-        description: 'A portfolio site for the design firm Artichoke Designs',
-        color: "#499324",
-        background_image: 'static/artichoke_background.png',
-        image: 'static/artichoke_site.png',
-        url: "www.artichoke.design",
-        text_position: "left",
-        title_border: true
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_5___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_header__WEBPACK_IMPORTED_MODULE_8__["default"], null), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("section", null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("iframe", {
+        src: "/static/resume.pdf",
+        type: "application/pdf",
+        className: _Resume_scss__WEBPACK_IMPORTED_MODULE_11___default()('resume-container'),
+        width: "100%",
+        height: "100%"
       })));
     }
   }], [{
@@ -7289,21 +7127,21 @@ function (_Component) {
     }
   }]);
 
-  return Projects;
+  return Resume;
 }(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
 
-/* harmony default export */ __webpack_exports__["default"] = (Projects);
+/* harmony default export */ __webpack_exports__["default"] = (Resume);
 
 /***/ }),
 
-/***/ 8:
-/*!****************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2FProjects&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FApps%2FBiggica%2Fpages%2FProjects.jsx ***!
-  \****************************************************************************************************************************************************/
+/***/ 10:
+/*!************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2FResume&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FApps%2FBiggica%2Fpages%2FResume.jsx ***!
+  \************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2FProjects&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FApps%2FBiggica%2Fpages%2FProjects.jsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FProjects&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FApps%2FBiggica%2Fpages%2FProjects.jsx!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2FResume&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FApps%2FBiggica%2Fpages%2FResume.jsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FResume&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FApps%2FBiggica%2Fpages%2FResume.jsx!./");
 
 
 /***/ }),
@@ -7319,5 +7157,5 @@ module.exports = dll_1aef2d0bbc0d334d831c;
 
 /***/ })
 
-},[[8,"static/runtime/webpack.js","styles"]]]);
-//# sourceMappingURL=Projects.js.map
+},[[10,"static/runtime/webpack.js","styles"]]]);
+//# sourceMappingURL=Resume.js.map
