@@ -36,6 +36,7 @@ class SiteHead extends PureComponent {
 				<meta httpEquiv='x-dns-prefetch-control' content='on' />
 				<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
 				<meta name='robots' content='index, follow' />
+				<title>Biggica</title>
 
 				<meta name='twitter:site' content='@JoeBiggica' />
 				<meta name='twitter:creator' content='@JoeBiggica' />
