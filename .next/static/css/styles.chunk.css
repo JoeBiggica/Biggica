@@ -129,9 +129,9 @@
   width: 600px;
   height: 0;
   padding-bottom: 22%;
-  background-size: contain;
+  background-size: 100%;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: top; }
 
 a.Feature-image-2l6yD {
   transition: all 0.1s cubic-bezier(0.42, 0, 0.58, 1); }
