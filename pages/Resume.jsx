@@ -15,47 +15,18 @@ class Resume extends Component {
 		return {}
 	}
 
-	// toggle = () => {
-	// 	const { toggleTap } = this.props
-	// 	toggleTap()
-	// }
-
-	// increment = () => {
-	// 	const { incrementCount } = this.props
-	// 	incrementCount()
-	// }
-
-	// decrement = () => {
-	// 	const { decrementCount } = this.props
-	// 	decrementCount()
-	// }
-
 	render() {
 		return (
 			<>
 				<Header />
 				<section>
-					<object data="/static/resume.pdf" type="application/pdf" className={styles('resume-container')}>
-					    <embed src="/static/resume.pdf" type="application/pdf" />
-					</object>
+					<iframe src="/static/resume.pdf" type="application/pdf" className={styles('resume-container')} width='100%' height='100%'>
+					   {/* <embed src="/static/resume.pdf" type="application/pdf" />*/}
+					</iframe>
 				</section>
 			</>
 		)
 	}
 }
 
-const mapStateToProps = state => {
-	return {
-		tap: state.tap,
-		count: state.count
-	}
-}
-
-const mapDispatchToProps = dispatch => {
-	return {};
-}
-
-export default connect(
-	mapStateToProps,
-	mapDispatchToProps
-)(Resume);
+export default Resume;

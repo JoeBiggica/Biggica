@@ -51,18 +51,4 @@ class Projects extends Component {
 	}
 }
 
-const mapStateToProps = state => {
-	return {
-		tap: state.tap,
-		count: state.count
-	}
-}
-
-const mapDispatchToProps = dispatch => {
-	return {};
-}
-
-export default connect(
-	mapStateToProps,
-	mapDispatchToProps
-)(Projects);
+export default Projects;
