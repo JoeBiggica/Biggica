@@ -44,7 +44,7 @@ class Feature extends PureComponent {
 
 		const image_style = {
 			backgroundImage: image && `url(${image})`,
-			border: image && `1px solid ${color}`,
+			border: image && `3px solid ${color}`,
 		};
 
 		const inner_container_style = {
@@ -53,12 +53,18 @@ class Feature extends PureComponent {
 
 		const title_description_style = {
 			textAlign: text_position === 'right' ? 'right' : 'left',
+			paddingLeft: text_position === 'right' && '20px',
+			paddingRight: text_position === 'left' && '20px',
 		};
 
 		const title_style = {
 			border: title_border && `2px solid ${color}`,
 			padding: '12px 14px',
 		};
+
+		const hover_background_style = {
+			boxShadow: `0 0 10px 10px ${color}`,
+		}
 
 		return (
 			<div 
@@ -82,20 +88,26 @@ class Feature extends PureComponent {
 							{description}
 						</p>
 					</div>
-					{url ? 
-						<a 
-							href={url} 
-							target='_blank'
-							className={styles('image')}
-							style={image_style} 
-						/>
-						: 
-						<div 
-							className={styles('image')} 
-							style={image_style} 
-						/>
-					}
-					
+					<div className={styles('image-container')}>
+						{url ? 
+							<a 
+								href={url} 
+								target='_blank'
+								className={styles('image')}
+								style={image_style} 
+							>
+								<div 
+									className={styles('hover-background')} 
+									style={hover_background_style}
+								/>
+							</a>
+							: 
+							<div 
+								className={styles('image')} 
+								style={image_style} 
+							/>
+						}
+					</div>
 				</div>
 			</div>
 		);	

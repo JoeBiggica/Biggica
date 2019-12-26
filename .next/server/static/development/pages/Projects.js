@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -167,17 +167,22 @@ function (_PureComponent) {
       };
       var image_style = {
         backgroundImage: image && "url(".concat(image, ")"),
-        border: image && "1px solid ".concat(color)
+        border: image && "3px solid ".concat(color)
       };
       var inner_container_style = {
         flexDirection: text_position === 'right' ? 'row-reverse' : 'row'
       };
       var title_description_style = {
-        textAlign: text_position === 'right' ? 'right' : 'left'
+        textAlign: text_position === 'right' ? 'right' : 'left',
+        paddingLeft: text_position === 'right' && '20px',
+        paddingRight: text_position === 'left' && '20px'
       };
       var title_style = {
         border: title_border && "2px solid ".concat(color),
         padding: '12px 14px'
+      };
+      var hover_background_style = {
+        boxShadow: "0 0 10px 10px ".concat(color)
       };
       return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         className: classnames__WEBPACK_IMPORTED_MODULE_8___default()(_Feature_scss__WEBPACK_IMPORTED_MODULE_9___default()('container'), className),
@@ -193,15 +198,20 @@ function (_PureComponent) {
         style: title_style
       }, title), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("p", {
         className: _Feature_scss__WEBPACK_IMPORTED_MODULE_9___default()('description')
-      }, description)), url ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
+      }, description)), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: _Feature_scss__WEBPACK_IMPORTED_MODULE_9___default()('image-container')
+      }, url ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
         href: url,
         target: "_blank",
         className: _Feature_scss__WEBPACK_IMPORTED_MODULE_9___default()('image'),
         style: image_style
-      }) : react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: _Feature_scss__WEBPACK_IMPORTED_MODULE_9___default()('hover-background'),
+        style: hover_background_style
+      })) : react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         className: _Feature_scss__WEBPACK_IMPORTED_MODULE_9___default()('image'),
         style: image_style
-      })));
+      }))));
     }
   }]);
 
@@ -1078,7 +1088,9 @@ module.exports = {
 	"title-description": "Feature-title-description-1u7IQ",
 	"title": "Feature-title-34dMt",
 	"description": "Feature-description-2dTj5",
-	"image": "Feature-image-2l6yD"
+	"image-container": "Feature-image-container-2d9s9",
+	"image": "Feature-image-2l6yD",
+	"hover-background": "Feature-hover-background-o9S0Z"
 };
 
 /***/ }),
@@ -1266,7 +1278,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 5:
 /*!**********************************!*\
   !*** multi ./pages/Projects.jsx ***!
   \**********************************/

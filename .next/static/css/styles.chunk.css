@@ -110,7 +110,7 @@
   position: relative; }
 
 .Feature-inner-container-1OeTM {
-  padding: 60px;
+  padding: 70px 60px;
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse; }
@@ -125,18 +125,29 @@
   .Feature-title-description-1u7IQ .Feature-description-2dTj5 {
     font-size: 18px; }
 
-.Feature-image-2l6yD {
-  width: 600px;
-  height: 0;
-  padding-bottom: 22%;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: top; }
-
-a.Feature-image-2l6yD {
-  transition: all 0.1s cubic-bezier(0.42, 0, 0.58, 1); }
-  a.Feature-image-2l6yD:hover {
-    box-shadow: 0px 0px 10px 8px rgba(225, 225, 225, 0.9); }
+.Feature-image-container-2d9s9 {
+  position: relative;
+  width: 50%; }
+  .Feature-image-container-2d9s9 .Feature-image-2l6yD {
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-bottom: 80%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top; }
+  .Feature-image-container-2d9s9 .Feature-hover-background-o9S0Z {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.25s cubic-bezier(0.42, 0, 0.58, 1);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; }
+  .Feature-image-container-2d9s9 a.Feature-image-2l6yD:hover .Feature-hover-background-o9S0Z {
+    visibility: visible;
+    opacity: .5; }
 
 .styles-clearfix-2Rb3A:before,
 .styles-clearfix-2Rb3A:after {
@@ -186,10 +197,6 @@ ul {
 /*Oswald Webfont*/
 @font-face {
   font-family: 'Oswald', sans-serif; }
-
-.Resume-resume-container-1GY0j {
-  width: 100vw;
-  height: 100vh; }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/

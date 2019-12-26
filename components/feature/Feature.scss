@@ -10,7 +10,7 @@
 }
 
 .inner-container {
-	padding: 60px;
+	padding: 70px 60px;
 	display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
@@ -31,18 +31,39 @@
 	}
 }
 
-.image {
-	width: 600px;
-	height: 0;
-	padding-bottom: 22%;
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position: top;
-}
+.image-container {
+	position: relative;
+	width: 50%;	
 
-a.image {
-	transition: all .1s $easeInOut;
-	&:hover {
-		box-shadow: 0px 0px 10px 8px rgba(225, 225, 225, 0.9);
+	.image {
+		display: block;
+		width: 100%;
+		height: 0;
+		padding-bottom: 80%;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: top;
+	}
+
+	.hover-background {
+		visibility: hidden;
+		opacity: 0;
+		transition: all .25s $easeInOut;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+
+	a.image {
+
+		&:hover {
+			.hover-background {
+				visibility: visible;
+				opacity: .5;
+			}
+		}
 	}
 }
+
