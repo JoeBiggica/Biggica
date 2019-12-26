@@ -1,0 +1,40 @@
+@import 'styles/_breakpoints.scss';
+@import 'styles/_colors.scss';
+
+.container {
+	width: 100%;
+	min-height: 100vh;
+	background-size: cover;
+	position: relative;
+}
+
+.inner-container {
+	padding: 60px;
+	display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.title-description {
+	width: 50%;
+	color: white;
+
+	.title {
+		display: inline-block;
+		font-size: 36px;
+		margin-bottom: 20px;
+	}
+
+	.description {
+		font-size: 18px;
+	}
+}
+
+.image {
+	width: 600px;
+	height: 0;
+	padding-bottom: 22%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}

@@ -103,6 +103,36 @@
     .HeroBanner-text-2io57 {
       font-size: 40px; } }
 
+.Feature-container-TXDFJ {
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  position: relative; }
+
+.Feature-inner-container-1OeTM {
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse; }
+
+.Feature-title-description-1u7IQ {
+  width: 50%;
+  color: white; }
+  .Feature-title-description-1u7IQ .Feature-title-34dMt {
+    display: inline-block;
+    font-size: 36px;
+    margin-bottom: 20px; }
+  .Feature-title-description-1u7IQ .Feature-description-2dTj5 {
+    font-size: 18px; }
+
+.Feature-image-2l6yD {
+  width: 600px;
+  height: 0;
+  padding-bottom: 22%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
 .styles-clearfix-2Rb3A:before,
 .styles-clearfix-2Rb3A:after {
   content: "";
@@ -151,10 +181,6 @@ ul {
 /*Oswald Webfont*/
 @font-face {
   font-family: 'Oswald', sans-serif; }
-
-.Resume-resume-container-1GY0j {
-  width: 100vw;
-  height: 100vh; }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/

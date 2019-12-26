@@ -50,7 +50,7 @@ class Header extends PureComponent {
 		return (
 			<header className={styles('container')}>
 				<div className={styles('logo')}>
-					<a href='/'>Joe Biggca</a>
+					<a href='/'>Joe Biggica</a>
 				</div>
 				<div className={styles('menu-container')}>
 					<HamburgerButton className={styles('button')} onClick={this.onClick} />
