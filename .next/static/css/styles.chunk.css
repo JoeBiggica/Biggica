@@ -133,6 +133,11 @@
   background-repeat: no-repeat;
   background-position: center; }
 
+a.Feature-image-2l6yD {
+  transition: all 0.1s cubic-bezier(0.42, 0, 0.58, 1); }
+  a.Feature-image-2l6yD:hover {
+    box-shadow: 0px 0px 10px 8px rgba(225, 225, 225, 0.9); }
+
 .styles-clearfix-2Rb3A:before,
 .styles-clearfix-2Rb3A:after {
   content: "";

@@ -1,5 +1,6 @@
 @import 'styles/_breakpoints.scss';
 @import 'styles/_colors.scss';
+@import 'styles/_eases.scss';
 
 .container {
 	width: 100%;
@@ -37,4 +38,11 @@
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+a.image {
+	transition: all .1s $easeInOut;
+	&:hover {
+		box-shadow: 0px 0px 10px 8px rgba(225, 225, 225, 0.9);
+	}
 }

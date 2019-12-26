@@ -44,6 +44,7 @@ class Feature extends PureComponent {
 
 		const image_style = {
 			backgroundImage: image && `url(${image})`,
+			border: image && `1px solid ${color}`,
 		};
 
 		const inner_container_style = {

@@ -62,7 +62,8 @@ function (_PureComponent) {
         backgroundImage: background_image && "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(".concat(background_image, ")")
       };
       var image_style = {
-        backgroundImage: image && "url(".concat(image, ")")
+        backgroundImage: image && "url(".concat(image, ")"),
+        border: image && "1px solid ".concat(color)
       };
       var inner_container_style = {
         flexDirection: text_position === 'right' ? 'row-reverse' : 'row'
@@ -7251,13 +7252,22 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_5___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_header__WEBPACK_IMPORTED_MODULE_8__["default"], null), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("section", null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_herobanner__WEBPACK_IMPORTED_MODULE_9__["default"], {
         text: "Projects"
       })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("section", null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_feature__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        title: 'Reuters',
+        description: 'A global news site focused on world, politics, and market news',
+        color: "#FF8000",
+        background_image: 'static/reuters_background.png',
+        image: 'static/reuters_site.png',
+        url: "//www.reuters.com/markets/currencies",
+        text_position: "right",
+        title_border: true
+      })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("section", null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_feature__WEBPACK_IMPORTED_MODULE_10__["default"], {
         title: 'Artichoke Designs',
         description: 'A portfolio site for the design firm Artichoke Designs',
         color: "#499324",
         background_image: 'static/artichoke_background.png',
         image: 'static/artichoke_site.png',
         url: "//www.artichoke.design",
-        text_position: "right",
+        text_position: "left",
         title_border: true
       })));
     }
