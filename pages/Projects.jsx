@@ -29,7 +29,7 @@ class Projects extends Component {
 						color='#FF8000'
 						background_image={'static/reuters_background.png'}
 						image={'static/reuters_site.png'}
-						url='//www.reuters.com/markets/currencies'
+						url='//www.reuters.com/companies/AMZN.O'
 						text_position='right'
 						title_border
 					/>

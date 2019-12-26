@@ -7265,7 +7265,7 @@ function (_Component) {
         color: "#FF8000",
         background_image: 'static/reuters_background.png',
         image: 'static/reuters_site.png',
-        url: "//www.reuters.com/markets/currencies",
+        url: "//www.reuters.com/companies/AMZN.O",
         text_position: "right",
         title_border: true
       })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("section", null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_feature__WEBPACK_IMPORTED_MODULE_10__["default"], {
