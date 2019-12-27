@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -650,7 +650,9 @@ function (_PureComponent) {
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
         className: button_classname
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
-        href: button.url
+        href: button.url,
+        target: button.target,
+        onClick: button.onClick
       }, button.text));
     });
 
@@ -662,22 +664,37 @@ function (_PureComponent) {
     value: function render() {
       var _this$props = this.props,
           className = _this$props.className,
-          text = _this$props.text,
-          text_border = _this$props.text_border,
+          title = _this$props.title,
+          title_border = _this$props.title_border,
+          text_position = _this$props.text_position,
           buttons = _this$props.buttons,
-          button_border = _this$props.button_border;
-      var text_container_classname = _HeroBanner_scss__WEBPACK_IMPORTED_MODULE_10___default()('text-container', {
-        'border': text_border
+          button_border = _this$props.button_border,
+          image = _this$props.image;
+      var container_classname = _HeroBanner_scss__WEBPACK_IMPORTED_MODULE_10___default()('container', {
+        'justify-top': text_position === 'top',
+        'justify-bottom': text_position === 'bottom'
       });
+      var text_container_classname = _HeroBanner_scss__WEBPACK_IMPORTED_MODULE_10___default()('text-container', {
+        'border': title_border
+      });
+      var image_style = {
+        backgroundImage: image
+      };
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: classnames__WEBPACK_IMPORTED_MODULE_9___default()(_HeroBanner_scss__WEBPACK_IMPORTED_MODULE_10___default()('container'), className)
+        className: classnames__WEBPACK_IMPORTED_MODULE_9___default()(container_classname, className)
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: text_container_classname
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h1", {
-        className: _HeroBanner_scss__WEBPACK_IMPORTED_MODULE_10___default()('text')
-      }, this.props.text)), buttons && react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("ul", {
+        className: _HeroBanner_scss__WEBPACK_IMPORTED_MODULE_10___default()('title')
+      }, this.props.title)), buttons && react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("ul", {
         className: _HeroBanner_scss__WEBPACK_IMPORTED_MODULE_10___default()('buttons-container')
-      }, buttons.map(this.renderButton)));
+      }, buttons.map(this.renderButton)), image && react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: _HeroBanner_scss__WEBPACK_IMPORTED_MODULE_10___default()('image-container'),
+        onClick: image.onClick
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
+        className: _HeroBanner_scss__WEBPACK_IMPORTED_MODULE_10___default()('image'),
+        src: image.src
+      })));
     }
   }]);
 
@@ -686,10 +703,12 @@ function (_PureComponent) {
 
 Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(HeroBanner, "propTypes", {
   className: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.string,
-  text: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.string,
-  text_border: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.bool,
+  title: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.string,
+  title_border: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.bool,
+  text_position: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.string,
   buttons: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.array,
-  button_border: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.bool
+  button_border: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.bool,
+  image: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.object
 });
 
 /* harmony default export */ __webpack_exports__["default"] = (HeroBanner);
@@ -1172,11 +1191,13 @@ module.exports = {
 
 module.exports = {
 	"container": "HeroBanner-container-fYWwV",
+	"justify-top": "HeroBanner-justify-top-3VB1M",
 	"text-container": "HeroBanner-text-container-3UaLg",
 	"border": "HeroBanner-border-1PvtJ",
-	"text": "HeroBanner-text-2io57",
+	"title": "HeroBanner-title-2n_0g",
 	"buttons-container": "HeroBanner-buttons-container-2bvpJ",
-	"button": "HeroBanner-button-1GnDi"
+	"button": "HeroBanner-button-1GnDi",
+	"image-container": "HeroBanner-image-container-3HA7n"
 };
 
 /***/ }),
@@ -1249,8 +1270,9 @@ function (_Component) {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_5___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_header__WEBPACK_IMPORTED_MODULE_8__["default"], null), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("section", null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_herobanner__WEBPACK_IMPORTED_MODULE_9__["default"], {
-        text: "Projects",
-        text_border: true
+        title: "Projects",
+        title_border: true,
+        text_position: "top"
       })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("section", null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_feature__WEBPACK_IMPORTED_MODULE_10__["default"], {
         title: 'Reuters',
         description: 'A global news site focused on world, politics, and market news',
@@ -1316,7 +1338,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 6:
 /*!**********************************!*\
   !*** multi ./pages/Projects.jsx ***!
   \**********************************/

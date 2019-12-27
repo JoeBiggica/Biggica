@@ -21,8 +21,9 @@ class Projects extends Component {
 				<Header />
 				<section>
 					<HeroBanner 
-						text='Projects' 
-						text_border
+						title='Projects' 
+						title_border
+						text_position='top'
 					/>
 				</section>
 				<section>

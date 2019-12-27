@@ -87,16 +87,20 @@
 
 .HeroBanner-container-fYWwV {
   width: 100%;
-  height: 100vh;
-  padding: 0 20px;
+  min-height: 100vh;
+  padding: 60px 20px 30px;
   background: #232323;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center; }
-  @media (min-width: 1024px) {
+  @media (min-width: 600px) {
     .HeroBanner-container-fYWwV {
-      padding: 0 60px; } }
+      padding: 0 60px 60px;
+      justify-content: center; } }
+  .HeroBanner-container-fYWwV.HeroBanner-justify-top-3VB1M {
+    justify-content: flex-start;
+    padding-top: 60px; }
 
 .HeroBanner-text-container-3UaLg {
   max-width: 75%;
@@ -106,30 +110,31 @@
       max-width: 60%; } }
   .HeroBanner-text-container-3UaLg.HeroBanner-border-1PvtJ {
     border: 1px solid #fff;
-    padding: 20px; }
+    padding: 18px 20px; }
 
-.HeroBanner-text-2io57 {
+.HeroBanner-title-2n_0g {
   font-size: 24px;
   line-height: 1.3;
   color: #fff; }
-  @media (min-width: 1024px) {
-    .HeroBanner-text-2io57 {
+  @media (min-width: 600px) {
+    .HeroBanner-title-2n_0g {
       font-size: 40px; } }
 
 .HeroBanner-buttons-container-2bvpJ {
   margin-top: 40px; }
-  @media (min-width: 1024px) {
+  @media (min-width: 600px) {
     .HeroBanner-buttons-container-2bvpJ {
       margin-top: 60px; } }
 
 .HeroBanner-button-1GnDi {
   font-size: 18px;
   color: #fff;
+  text-align: center;
   cursor: pointer;
   transition: all 0.25s cubic-bezier(0.42, 0, 0.58, 1); }
   .HeroBanner-button-1GnDi:not(:last-child) {
     margin: 0 0 20px 0; }
-  @media (min-width: 1024px) {
+  @media (min-width: 600px) {
     .HeroBanner-button-1GnDi {
       font-size: 24px;
       display: inline-block; }
@@ -140,8 +145,25 @@
     padding: 8px 10px; }
     .HeroBanner-button-1GnDi.HeroBanner-border-1PvtJ:hover {
       background: #fff; }
+      .HeroBanner-button-1GnDi.HeroBanner-border-1PvtJ:hover a {
+        color: #005CAF; }
   .HeroBanner-button-1GnDi a {
     color: #fff; }
+
+.HeroBanner-image-container-3HA7n {
+  width: 100%;
+  margin-top: 40px;
+  box-shadow: 0 0 10px 10px #000000;
+  cursor: pointer;
+  transition: all 0.25 cubic-bezier(0.42, 0, 0.58, 1); }
+  @media (min-width: 600px) {
+    .HeroBanner-image-container-3HA7n {
+      width: 500px;
+      margin-top: 60px; } }
+  .HeroBanner-image-container-3HA7n:hover {
+    box-shadow: 0 0 10px 15px #000000; }
+  .HeroBanner-image-container-3HA7n img {
+    width: 100%; }
 
 .Feature-container-TXDFJ {
   width: 100%;

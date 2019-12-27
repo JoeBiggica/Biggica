@@ -311,7 +311,9 @@ function (_PureComponent) {
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
         className: button_classname
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
-        href: button.url
+        href: button.url,
+        target: button.target,
+        onClick: button.onClick
       }, button.text));
     });
 
@@ -323,22 +325,37 @@ function (_PureComponent) {
     value: function render() {
       var _this$props = this.props,
           className = _this$props.className,
-          text = _this$props.text,
-          text_border = _this$props.text_border,
+          title = _this$props.title,
+          title_border = _this$props.title_border,
+          text_position = _this$props.text_position,
           buttons = _this$props.buttons,
-          button_border = _this$props.button_border;
-      var text_container_classname = _HeroBanner_scss__WEBPACK_IMPORTED_MODULE_10___default()('text-container', {
-        'border': text_border
+          button_border = _this$props.button_border,
+          image = _this$props.image;
+      var container_classname = _HeroBanner_scss__WEBPACK_IMPORTED_MODULE_10___default()('container', {
+        'justify-top': text_position === 'top',
+        'justify-bottom': text_position === 'bottom'
       });
+      var text_container_classname = _HeroBanner_scss__WEBPACK_IMPORTED_MODULE_10___default()('text-container', {
+        'border': title_border
+      });
+      var image_style = {
+        backgroundImage: image
+      };
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: classnames__WEBPACK_IMPORTED_MODULE_9___default()(_HeroBanner_scss__WEBPACK_IMPORTED_MODULE_10___default()('container'), className)
+        className: classnames__WEBPACK_IMPORTED_MODULE_9___default()(container_classname, className)
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: text_container_classname
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h1", {
-        className: _HeroBanner_scss__WEBPACK_IMPORTED_MODULE_10___default()('text')
-      }, this.props.text)), buttons && react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("ul", {
+        className: _HeroBanner_scss__WEBPACK_IMPORTED_MODULE_10___default()('title')
+      }, this.props.title)), buttons && react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("ul", {
         className: _HeroBanner_scss__WEBPACK_IMPORTED_MODULE_10___default()('buttons-container')
-      }, buttons.map(this.renderButton)));
+      }, buttons.map(this.renderButton)), image && react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: _HeroBanner_scss__WEBPACK_IMPORTED_MODULE_10___default()('image-container'),
+        onClick: image.onClick
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
+        className: _HeroBanner_scss__WEBPACK_IMPORTED_MODULE_10___default()('image'),
+        src: image.src
+      })));
     }
   }]);
 
@@ -347,10 +364,12 @@ function (_PureComponent) {
 
 Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(HeroBanner, "propTypes", {
   className: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.string,
-  text: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.string,
-  text_border: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.bool,
+  title: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.string,
+  title_border: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.bool,
+  text_position: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.string,
   buttons: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.array,
-  button_border: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.bool
+  button_border: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.bool,
+  image: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.object
 });
 
 /* harmony default export */ __webpack_exports__["default"] = (HeroBanner);
@@ -7173,7 +7192,7 @@ function (_Component) {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_5___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_header__WEBPACK_IMPORTED_MODULE_8__["default"], null), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("section", null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_herobanner__WEBPACK_IMPORTED_MODULE_9__["default"], {
-        text: "Web engineer specializing in front-end development and modern frameworks",
+        title: "Web engineer specializing in front-end development and modern frameworks",
         buttons: this.banner_buttons,
         button_border: true
       })));
@@ -7198,7 +7217,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 
 /***/ }),
 
-/***/ 8:
+/***/ 6:
 /*!**********************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2FIndex&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FApps%2FBiggica%2Fpages%2FIndex.jsx ***!
   \**********************************************************************************************************************************************/
@@ -7221,5 +7240,5 @@ module.exports = dll_1aef2d0bbc0d334d831c;
 
 /***/ })
 
-},[[8,"static/runtime/webpack.js","styles"]]]);
+},[[6,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=Index.js.map

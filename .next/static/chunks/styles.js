@@ -142,7 +142,7 @@ module.exports = {"container":"Feature-container-TXDFJ","inner-container":"Featu
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1577465914344");
+            injectCss(link, link.href.split("?")[0] + "?unix=1577477386739");
           });
       }
     }
@@ -180,7 +180,7 @@ module.exports = {"container":"Header-container-3ZpuA","inner":"Header-inner-2A1
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1577459463514");
+            injectCss(link, link.href.split("?")[0] + "?unix=1577477386617");
           });
       }
     }
@@ -218,7 +218,7 @@ module.exports = {"button":"HamburgerButton-button-3Kmsn","hamburger":"Hamburger
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1577458324439");
+            injectCss(link, link.href.split("?")[0] + "?unix=1577477386711");
           });
       }
     }
@@ -234,7 +234,7 @@ module.exports = {"button":"HamburgerButton-button-3Kmsn","hamburger":"Hamburger
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"container":"HeroBanner-container-fYWwV","text-container":"HeroBanner-text-container-3UaLg","border":"HeroBanner-border-1PvtJ","text":"HeroBanner-text-2io57","buttons-container":"HeroBanner-buttons-container-2bvpJ","button":"HeroBanner-button-1GnDi"};;
+module.exports = {"container":"HeroBanner-container-fYWwV","justify-top":"HeroBanner-justify-top-3VB1M","text-container":"HeroBanner-text-container-3UaLg","border":"HeroBanner-border-1PvtJ","title":"HeroBanner-title-2n_0g","buttons-container":"HeroBanner-buttons-container-2bvpJ","button":"HeroBanner-button-1GnDi","image-container":"HeroBanner-image-container-3HA7n"};;
     if (true) {
       var injectCss = function injectCss(prev, href) {
         var link = prev.cloneNode();
@@ -256,7 +256,7 @@ module.exports = {"container":"HeroBanner-container-fYWwV","text-container":"Her
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1577466056315");
+            injectCss(link, link.href.split("?")[0] + "?unix=1577477832224");
           });
       }
     }
@@ -294,7 +294,7 @@ module.exports = {"clearfix":"styles-clearfix-2Rb3A"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1577464764058");
+            injectCss(link, link.href.split("?")[0] + "?unix=1577477386756");
           });
       }
     }

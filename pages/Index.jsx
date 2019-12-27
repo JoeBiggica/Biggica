@@ -54,7 +54,7 @@ class Index extends Component {
 				<Header />
 				<section>
 					<HeroBanner 
-						text='Web engineer specializing in front-end development and modern frameworks'
+						title='Web engineer specializing in front-end development and modern frameworks'
 						buttons={this.banner_buttons}
 						button_border
 					/>

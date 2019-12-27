@@ -14,20 +14,26 @@ class Contact extends Component {
 		return {}
 	}
 
-	// toggle = () => {
-	// 	const { toggleTap } = this.props
-	// 	toggleTap()
-	// }
+	constructor(props) {
+		super(props);
 
-	// increment = () => {
-	// 	const { incrementCount } = this.props
-	// 	incrementCount()
-	// }
-
-	// decrement = () => {
-	// 	const { decrementCount } = this.props
-	// 	decrementCount()
-	// }
+		this.banner_buttons = [
+			{
+				text: 'Email',
+				url: 'mailto:joe@biggica.com',
+			},
+			{
+				text: 'LinkedIn',
+				url: 'https://www.linkedin.com/in/joebiggica',
+				target: '_blank',
+			},
+			{
+				text:'GitHub',
+				url:'https://github.com/JoeBiggica',
+				target: '_blank',
+			}
+		];
+	}
 
 	render() {
 		return (
@@ -35,8 +41,10 @@ class Contact extends Component {
 				<Header />
 				<section>
 					<HeroBanner 
-						text='Contact' 
-						text_border
+						title='Contact' 
+						title_border
+						text_position='top'
+						buttons={this.banner_buttons}
 					/>
 				</section>
 			</>
@@ -44,18 +52,4 @@ class Contact extends Component {
 	}
 }
 
-const mapStateToProps = state => {
-	return {
-		tap: state.tap,
-		count: state.count
-	}
-}
-
-const mapDispatchToProps = dispatch => {
-	return {};
-}
-
-export default connect(
-	mapStateToProps,
-	mapDispatchToProps
-)(Contact);
+export default Contact;
