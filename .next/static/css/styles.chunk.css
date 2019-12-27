@@ -110,19 +110,23 @@
   position: relative; }
 
 .Feature-inner-container-1OeTM {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.Feature-content-container-2qclK {
   padding: 40px 30px;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   align-items: center; }
   @media (min-width: 600px) {
-    .Feature-inner-container-1OeTM {
+    .Feature-content-container-2qclK {
       padding: 70px 60px;
       justify-content: space-between;
       align-items: flex-start; }
-      .Feature-inner-container-1OeTM.Feature-left-1qNbH {
+      .Feature-content-container-2qclK.Feature-left-1qNbH {
         flex-direction: row; }
-      .Feature-inner-container-1OeTM.Feature-right-2OAXo {
+      .Feature-content-container-2qclK.Feature-right-2OAXo {
         flex-direction: row-reverse; } }
 
 .Feature-title-description-1u7IQ {

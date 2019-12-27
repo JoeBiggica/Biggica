@@ -58,7 +58,7 @@ function (_PureComponent) {
           url = _this$props.url,
           text_position = _this$props.text_position,
           title_border = _this$props.title_border;
-      var inner_container_classname = _Feature_scss__WEBPACK_IMPORTED_MODULE_9___default()('inner-container', {
+      var content_container_classname = _Feature_scss__WEBPACK_IMPORTED_MODULE_9___default()('content-container', {
         'left': text_position === 'left',
         'right': text_position === 'right'
       });
@@ -84,7 +84,9 @@ function (_PureComponent) {
         className: classnames__WEBPACK_IMPORTED_MODULE_8___default()(_Feature_scss__WEBPACK_IMPORTED_MODULE_9___default()('container'), className),
         style: container_style
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: inner_container_classname
+        className: _Feature_scss__WEBPACK_IMPORTED_MODULE_9___default()('inner-container')
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: content_container_classname
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         className: title_description_classname
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("h3", {
@@ -105,7 +107,7 @@ function (_PureComponent) {
       })) : react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         className: _Feature_scss__WEBPACK_IMPORTED_MODULE_9___default()('image'),
         style: image_style
-      }))));
+      })))));
     }
   }]);
 
@@ -7265,7 +7267,7 @@ function (_Component) {
         color: "#FF8000",
         background_image: 'static/reuters_background.png',
         image: 'static/reuters_site.png',
-        url: "//www.reuters.com/companies/AMZN.O",
+        url: "https://www.reuters.com/companies/AMZN.O",
         text_position: "right",
         title_border: true
       })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("section", null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_feature__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -7274,7 +7276,7 @@ function (_Component) {
         color: "#499324",
         background_image: 'static/artichoke_background.png',
         image: 'static/artichoke_site.png',
-        url: "www.artichoke.design",
+        url: "http://www.artichoke.design",
         text_position: "left",
         title_border: true
       })));

@@ -29,7 +29,7 @@ class Projects extends Component {
 						color='#FF8000'
 						background_image={'static/reuters_background.png'}
 						image={'static/reuters_site.png'}
-						url='//www.reuters.com/companies/AMZN.O'
+						url='https://www.reuters.com/companies/AMZN.O'
 						text_position='right'
 						title_border
 					/>
@@ -41,7 +41,7 @@ class Projects extends Component {
 						color='#499324'
 						background_image={'static/artichoke_background.png'}
 						image={'static/artichoke_site.png'}
-						url='www.artichoke.design'
+						url='http://www.artichoke.design'
 						text_position='left'
 						title_border
 					/>

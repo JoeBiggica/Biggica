@@ -38,7 +38,7 @@ class Feature extends PureComponent {
 			title_border,
 		} = this.props;
 
-		const inner_container_classname = styles('inner-container', {
+		const content_container_classname = styles('content-container', {
 			'left': text_position === 'left',
 			'right': text_position === 'right',
 		});
@@ -71,37 +71,39 @@ class Feature extends PureComponent {
 				className={classnames(styles('container'), className)} 
 				style={container_style}
 			>
-				<div className={inner_container_classname}>
-					<div className={title_description_classname}>
-						<h3 
-							className={styles('title')} 
-							style={title_style}
-						>
-							{title}
-						</h3>
-						<p className={styles('description')}>
-							{description}
-						</p>
-					</div>
-					<div className={styles('image-container')}>
-						{url ? 
-							<a 
-								href={url} 
-								target='_blank'
-								className={styles('image')}
-								style={image_style} 
+				<div className={styles('inner-container')}>
+					<div className={content_container_classname}>
+						<div className={title_description_classname}>
+							<h3 
+								className={styles('title')} 
+								style={title_style}
 							>
+								{title}
+							</h3>
+							<p className={styles('description')}>
+								{description}
+							</p>
+						</div>
+						<div className={styles('image-container')}>
+							{url ? 
+								<a 
+									href={url} 
+									target='_blank'
+									className={styles('image')}
+									style={image_style} 
+								>
+									<div 
+										className={styles('hover-background')} 
+										style={hover_background_style}
+									/>
+								</a>
+								: 
 								<div 
-									className={styles('hover-background')} 
-									style={hover_background_style}
+									className={styles('image')} 
+									style={image_style} 
 								/>
-							</a>
-							: 
-							<div 
-								className={styles('image')} 
-								style={image_style} 
-							/>
-						}
+							}
+						</div>
 					</div>
 				</div>
 			</div>
