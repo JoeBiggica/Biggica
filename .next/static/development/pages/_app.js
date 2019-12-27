@@ -83,6 +83,12 @@ function (_PureComponent) {
         name: "robots",
         content: "index, follow"
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("title", null, "Biggica"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("meta", {
+        name: "description",
+        content: "The Joe Biggica portfolio site"
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("meta", {
+        name: "keywords",
+        content: "biggica, joebiggica, joe biggica, joseph biggica, biggica portfolio, joe biggica portfolio, biggica.com, biggica family, joe biggica kung fu, biggica kung fu, joe biggica hung ga, joe biggica resume, web development, joe biggica developer, biggica engineer, engineering"
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("meta", {
         name: "twitter:title",
         content: "Biggica.com"
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("meta", {
@@ -102,10 +108,13 @@ function (_PureComponent) {
         content: "Biggica.com"
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("meta", {
         property: "og:description",
-        content: "The Biggica portfolio site"
+        content: "The Joe Biggica portfolio site"
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("meta", {
         property: "og:image",
         content: "/static/biggica_logo.png"
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("meta", {
+        property: "og:url",
+        content: "https://www.biggica.com/"
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("meta", {
         name: "msapplication-TileColor",
         content: "#ffffff"

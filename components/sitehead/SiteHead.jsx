@@ -31,6 +31,9 @@ class SiteHead extends PureComponent {
 				<meta name='robots' content='index, follow' />
 				<title>Biggica</title>
 
+				<meta name="description" content="The Joe Biggica portfolio site" />
+				<meta name="keywords" content="biggica, joebiggica, joe biggica, joseph biggica, biggica portfolio, joe biggica portfolio, biggica.com, biggica family, joe biggica kung fu, biggica kung fu, joe biggica hung ga, joe biggica resume, web development, joe biggica developer, biggica engineer, engineering" />
+
 				<meta name="twitter:title" content="Biggica.com" />
 				<meta name='twitter:site' content='@JoeBiggica' />
 				<meta name='twitter:creator' content='@JoeBiggica' />
@@ -38,8 +41,9 @@ class SiteHead extends PureComponent {
 				<meta name="twitter:image" content="/static/biggica_logo.png" />
 
 				<meta name="og:title" content="Biggica.com" />
-				<meta property="og:description" content="The Biggica portfolio site" />
+				<meta property="og:description" content="The Joe Biggica portfolio site" />
 				<meta property="og:image" content="/static/biggica_logo.png" />
+				<meta property="og:url" content="https://www.biggica.com/" />
 
 				<meta name='msapplication-TileColor' content='#ffffff' />
 				<meta name='msapplication-config' content='none' />
