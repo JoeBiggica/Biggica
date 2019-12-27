@@ -7298,7 +7298,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 8:
+/***/ 0:
 /*!****************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2FProjects&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FApps%2FBiggica%2Fpages%2FProjects.jsx ***!
   \****************************************************************************************************************************************************/
@@ -7321,5 +7321,5 @@ module.exports = dll_1aef2d0bbc0d334d831c;
 
 /***/ })
 
-},[[8,"static/runtime/webpack.js","styles"]]]);
+},[[0,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=Projects.js.map

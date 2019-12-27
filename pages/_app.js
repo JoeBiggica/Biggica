@@ -2,6 +2,7 @@ import App, { Container } from 'next/app'
 import React from 'react'
 import withReduxStore from '../lib/with-redux-store'
 import { Provider } from 'react-redux'
+import SiteHead from '/components/sitehead'
 
 class NextApp extends App {
 	render () {
@@ -9,6 +10,7 @@ class NextApp extends App {
 		return (
 			<Container>
 				<Provider store={reduxStore}>
+					<SiteHead/>
 					<Component {...pageProps} />
 				</Provider>
 			</Container>

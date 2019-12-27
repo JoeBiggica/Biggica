@@ -2,17 +2,6 @@ import { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
-import favicon from './favicon/favicon.ico';
-import favicon_32 from './favicon/favicon-32x32.png';
-import favicon_48 from './favicon/favicon-48x48.png';
-
-const {publicRuntimeConfig} = getConfig();
-
-const {
-	segment_write_key,
-	gtm_container_id,
-} = publicRuntimeConfig;
-
 
 class SiteHead extends PureComponent {
 
@@ -23,6 +12,10 @@ class SiteHead extends PureComponent {
 				props: PropTypes.object.isRequired,
 			})
 		).isRequired,
+	}
+
+	static defaultProps = {
+		meta: [],
 	}
 
 	renderTag = ({tag: Tag, props}, index) => (
@@ -46,10 +39,10 @@ class SiteHead extends PureComponent {
 				<meta name='msapplication-config' content='none' />
 				<meta name='theme-color' content='#333333' />
 
-				<link rel='shortcut icon' type='image/x-icon' href={favicon} />
-				<link rel='icon' type='image/png' href={favicon} sizes='16x16' />
-				<link rel='icon' type='image/png' href={favicon_32} sizes='32x32' />
-				<link rel='icon' type='image/png' href={favicon_48} sizes='48x48' />
+				<link rel='shortcut icon' type='image/x-icon' href='./favicon/favicon.png' />
+				<link rel='icon' type='image/png' href='./favicon/favicon.png' sizes='16x16' />
+				<link rel='icon' type='image/png' href='./favicon/favicon-32x32.png' sizes='32x32' />
+				<link rel='icon' type='image/png' href='./favicon/favicon-48x48.png' sizes='48x48' />
 			
 				{this.props.meta.map(this.renderTag)}
 			</Head>
