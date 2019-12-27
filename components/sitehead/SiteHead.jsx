@@ -31,9 +31,15 @@ class SiteHead extends PureComponent {
 				<meta name='robots' content='index, follow' />
 				<title>Biggica</title>
 
+				<meta name="twitter:title" content="Biggica.com" />
 				<meta name='twitter:site' content='@JoeBiggica' />
 				<meta name='twitter:creator' content='@JoeBiggica' />
 				<meta name='twitter:card' content='summary_large_image' />
+				<meta name="twitter:image" content="/static/biggica_logo.png" />
+
+				<meta name="og:title" content="Biggica.com" />
+				<meta property="og:description" content="The Biggica portfolio site" />
+				<meta property="og:image" content="/static/biggica_logo.png" />
 
 				<meta name='msapplication-TileColor' content='#ffffff' />
 				<meta name='msapplication-config' content='none' />

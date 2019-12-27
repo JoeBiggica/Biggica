@@ -177,6 +177,9 @@ function (_PureComponent) {
         name: "robots",
         content: "index, follow"
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("title", null, "Biggica"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("meta", {
+        name: "twitter:title",
+        content: "Biggica.com"
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("meta", {
         name: "twitter:site",
         content: "@JoeBiggica"
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("meta", {
@@ -185,6 +188,18 @@ function (_PureComponent) {
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("meta", {
         name: "twitter:card",
         content: "summary_large_image"
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("meta", {
+        name: "twitter:image",
+        content: "/static/biggica_logo.png"
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("meta", {
+        name: "og:title",
+        content: "Biggica.com"
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("meta", {
+        property: "og:description",
+        content: "The Biggica portfolio site"
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("meta", {
+        property: "og:image",
+        content: "/static/biggica_logo.png"
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("meta", {
         name: "msapplication-TileColor",
         content: "#ffffff"
