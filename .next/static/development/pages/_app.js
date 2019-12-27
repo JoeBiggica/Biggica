@@ -103,21 +103,21 @@ function (_PureComponent) {
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("link", {
         rel: "shortcut icon",
         type: "image/x-icon",
-        href: "./favicon/favicon.png"
+        href: "/static/favicon/favicon.png"
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("link", {
         rel: "icon",
         type: "image/png",
-        href: "./favicon/favicon.png",
+        href: "/static/favicon/favicon.png",
         sizes: "16x16"
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("link", {
         rel: "icon",
         type: "image/png",
-        href: "./favicon/favicon-32x32.png",
+        href: "/static/favicon/favicon-32x32.png",
         sizes: "32x32"
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("link", {
         rel: "icon",
         type: "image/png",
-        href: "./favicon/favicon-48x48.png",
+        href: "/static/favicon/favicon-48x48.png",
         sizes: "48x48"
       }), this.props.meta.map(this.renderTag));
     }
