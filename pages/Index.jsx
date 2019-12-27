@@ -14,6 +14,25 @@ class Index extends Component {
 		return {}
 	}
 
+	constructor(props) {
+		super(props);
+
+		this.banner_buttons = [
+			{
+				text: 'Resume',
+				url: '/resume',
+			},
+			{
+				text: 'Projects',
+				url: '/projects',
+			},
+			{
+				text: 'Contact',
+				url: '/contact',
+			},
+		];
+	}
+
 	// toggle = () => {
 	// 	const { toggleTap } = this.props
 	// 	toggleTap()
@@ -35,8 +54,9 @@ class Index extends Component {
 				<Header />
 				<section>
 					<HeroBanner 
-						text='Web engineer specializing in front-end development and modern frameworks' 
-						border
+						text='Web engineer specializing in front-end development and modern frameworks'
+						buttons={this.banner_buttons}
+						button_border
 					/>
 				</section>
 			</>

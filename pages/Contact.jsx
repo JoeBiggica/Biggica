@@ -34,7 +34,10 @@ class Contact extends Component {
 			<>
 				<Header />
 				<section>
-					<HeroBanner text='Contact' />
+					<HeroBanner 
+						text='Contact' 
+						text_border
+					/>
 				</section>
 			</>
 		)

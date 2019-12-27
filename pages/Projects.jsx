@@ -20,7 +20,10 @@ class Projects extends Component {
 			<>
 				<Header />
 				<section>
-					<HeroBanner text='Projects' />
+					<HeroBanner 
+						text='Projects' 
+						text_border
+					/>
 				</section>
 				<section>
 					<Feature 

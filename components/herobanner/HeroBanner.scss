@@ -1,5 +1,6 @@
 @import 'styles/_breakpoints.scss';
 @import 'styles/_colors.scss';
+@import 'styles/_eases.scss';
 
 .container {
 	width: 100%;
@@ -39,3 +40,45 @@
 		font-size: 40px;
 	}
 }
+
+.buttons-container {
+	margin-top: 40px;
+
+	@include for-tablet-landscape-up {
+		margin-top: 60px;
+	}
+}
+
+.button {
+	font-size: 18px;
+	color: $white;
+	cursor: pointer;
+	transition: all .25s $easeInOut;
+
+	&:not(:last-child) {
+	 	margin: 0 0 20px 0;
+	 }
+
+	@include for-tablet-landscape-up {
+		font-size: 24px;
+		display: inline-block;
+		 &:not(:last-child) {
+		 	margin: 0 30px 0 0;
+		 }
+	}
+
+	&.border {
+		border: 1px solid $white;
+		padding: 8px 10px;
+
+		&:hover {
+			background: $white;
+		}
+	}
+
+	a {
+		color: $white;
+	}
+}
+
+
