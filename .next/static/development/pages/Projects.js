@@ -456,16 +456,25 @@ function (_PureComponent) {
     _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(HeroBanner)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "renderButton", function (button, index) {
+      var button_container_classname = _HeroBanner_scss__WEBPACK_IMPORTED_MODULE_10___default()('button-container', {
+        'border': _this.props.button_border,
+        'column': _this.props.button_direction === 'column',
+        'row': _this.props.button_direction === 'row'
+      });
       var button_classname = _HeroBanner_scss__WEBPACK_IMPORTED_MODULE_10___default()('button', {
         'border': _this.props.button_border
       });
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
+        className: button_container_classname
+      }, button.label && react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
+        className: _HeroBanner_scss__WEBPACK_IMPORTED_MODULE_10___default()('label')
+      }, button.label), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: button_classname
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
         href: button.url,
         target: button.target,
         onClick: button.onClick
-      }, button.text));
+      }, button.text)));
     });
 
     return _this;
@@ -481,10 +490,12 @@ function (_PureComponent) {
           text_position = _this$props.text_position,
           buttons = _this$props.buttons,
           button_border = _this$props.button_border,
-          image = _this$props.image;
+          image = _this$props.image,
+          full_height = _this$props.full_height;
       var container_classname = _HeroBanner_scss__WEBPACK_IMPORTED_MODULE_10___default()('container', {
         'justify-top': text_position === 'top',
-        'justify-bottom': text_position === 'bottom'
+        'justify-bottom': text_position === 'bottom',
+        'full-height': full_height
       });
       var text_container_classname = _HeroBanner_scss__WEBPACK_IMPORTED_MODULE_10___default()('text-container', {
         'border': title_border
@@ -520,7 +531,14 @@ Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODUL
   text_position: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.string,
   buttons: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.array,
   button_border: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.bool,
-  image: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.object
+  button_direction: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.string,
+  image: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.object,
+  full_height: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.bool
+});
+
+Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(HeroBanner, "defaultProps", {
+  button_direction: 'row',
+  full_height: true
 });
 
 /* harmony default export */ __webpack_exports__["default"] = (HeroBanner);
@@ -7312,10 +7330,11 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_5___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_header__WEBPACK_IMPORTED_MODULE_8__["default"], null), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("section", null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_herobanner__WEBPACK_IMPORTED_MODULE_9__["default"], {
         title: "Projects",
         title_border: true,
-        text_position: "top"
+        text_position: "top",
+        full_height: false
       })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("section", null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_feature__WEBPACK_IMPORTED_MODULE_10__["default"], {
         title: 'Reuters',
-        description: 'A global news site focused on world, politics, and market news',
+        description: 'A global news site specializing in world class journalism, photography, and market data and analysis. I helped lead the initive to mordernize Reuters.com, elevating it to industy standards in technology and performance. We are in the process of building a brand new site from the ground, starting with our live blog, market data, and video sections.',
         color: "#FF8000",
         background_image: 'static/reuters_background.png',
         image: 'static/reuters_site.png',
@@ -7324,7 +7343,7 @@ function (_Component) {
         title_border: true
       })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("section", null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_feature__WEBPACK_IMPORTED_MODULE_10__["default"], {
         title: 'Artichoke Designs',
-        description: 'A portfolio site for the design firm Artichoke Designs',
+        description: 'A portfolio site for the design firm Artichoke Designs. They are a small startup who achieve big wins in their designs and customer service. They are experts in branding, print design, web design, and also alternative posters. I helped them build their site from the ground up, and continue to consult them on the next steps in their web presence.',
         color: "#499324",
         background_image: 'static/artichoke_background.png',
         image: 'static/artichoke_site.png',

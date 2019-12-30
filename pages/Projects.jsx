@@ -24,12 +24,13 @@ class Projects extends Component {
 						title='Projects' 
 						title_border
 						text_position='top'
+						full_height={false}
 					/>
 				</section>
 				<section>
 					<Feature 
 						title={'Reuters'}
-						description={'A global news site focused on world, politics, and market news'}
+						description={'A global news site specializing in world class journalism, photography, and market data and analysis. I helped lead the initive to mordernize Reuters.com, elevating it to industy standards in technology and performance. We are in the process of building a brand new site from the ground, starting with our live blog, market data, and video sections.'}
 						color='#FF8000'
 						background_image={'static/reuters_background.png'}
 						image={'static/reuters_site.png'}
@@ -41,7 +42,7 @@ class Projects extends Component {
 				<section>
 					<Feature 
 						title={'Artichoke Designs'}
-						description={'A portfolio site for the design firm Artichoke Designs'}
+						description={'A portfolio site for the design firm Artichoke Designs. They are a small startup who achieve big wins in their designs and customer service. They are experts in branding, print design, web design, and also alternative posters. I helped them build their site from the ground up, and continue to consult them on the next steps in their web presence.'}
 						color='#499324'
 						background_image={'static/artichoke_background.png'}
 						image={'static/artichoke_site.png'}

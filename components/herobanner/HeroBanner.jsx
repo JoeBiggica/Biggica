@@ -14,18 +14,36 @@ class HeroBanner extends PureComponent {
 		text_position: PropTypes.string,
 		buttons: PropTypes.array,
 		button_border: PropTypes.bool,
+		button_direction: PropTypes.string,
 		image: PropTypes.object,
+		full_height: PropTypes.bool,
+	}
+
+	static defaultProps = {
+		button_direction: 'row',
+		full_height: true,
 	}
 
 	renderButton = (button, index) => {
+		const button_container_classname = styles('button-container', {
+			'border': this.props.button_border,
+			'column': this.props.button_direction === 'column',
+			'row': this.props.button_direction === 'row',
+		});
+
 		const button_classname = styles('button', {
-			'border': this.props.button_border
+			'border': this.props.button_border,
 		});
 		return (	
-			<li className={button_classname}>
-				<a href={button.url} target={button.target} onClick={button.onClick}>
-					{button.text}
-				</a>
+			<li className={button_container_classname}>
+				{button.label && 
+					<span className={styles('label')}>{button.label}</span>
+				}
+				<div className={button_classname}>
+					<a href={button.url} target={button.target} onClick={button.onClick}>
+						{button.text}
+					</a>
+				</div>
 			</li>	
 		);
 	}
@@ -40,11 +58,13 @@ class HeroBanner extends PureComponent {
 			buttons,
 			button_border,
 			image,
+			full_height,
 		} = this.props;
 
 		const container_classname = styles('container', {
 			'justify-top': text_position === 'top',
 			'justify-bottom': text_position === 'bottom',
+			'full-height': full_height,
 		});
 
 		const text_container_classname = styles('text-container', {

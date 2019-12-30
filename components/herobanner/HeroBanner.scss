@@ -4,7 +4,6 @@
 
 .container {
 	width: 100%;
-	min-height: 100vh;
 	padding: 60px 20px 30px;
 	background: $darkergrey;
 	display: flex;
@@ -20,6 +19,10 @@
 	&.justify-top {
 		justify-content: flex-start;
 		padding-top: 60px;
+	}
+
+	&.full-height {
+		min-height: 100vh;
 	}
 }
 
@@ -55,12 +58,8 @@
 	}
 }
 
-.button {
-	font-size: 18px;
-	color: $white;
+.button-container {
 	text-align: center;
-	cursor: pointer;
-	transition: all .25s $easeInOut;
 
 	&:not(:last-child) {
 	 	margin: 0 0 20px 0;
@@ -68,11 +67,30 @@
 
 	@include for-tablet-portrait-up {
 		font-size: 24px;
-		display: inline-block;
-		 &:not(:last-child) {
-		 	margin: 0 30px 0 0;
-		 }
+
+		&.row {
+			display: inline-block;
+			&:not(:last-child) {
+				margin: 0 30px 0 0;
+			}
+		}
 	}
+
+	a {
+		color: $white;
+	}
+}
+
+.label {
+	font-size: 16px;
+	color: $white;
+}
+
+.button {
+	font-size: 18px;
+	color: $white;
+	cursor: pointer;
+	transition: all .25s $easeInOut;
 
 	&.border {
 		border: 1px solid $white;
@@ -85,10 +103,6 @@
 				color: $blue;
 			}
 		}
-	}
-
-	a {
-		color: $white;
 	}
 }
 

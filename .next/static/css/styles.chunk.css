@@ -87,7 +87,6 @@
 
 .HeroBanner-container-fYWwV {
   width: 100%;
-  min-height: 100vh;
   padding: 60px 20px 30px;
   background: #232323;
   display: flex;
@@ -101,6 +100,8 @@
   .HeroBanner-container-fYWwV.HeroBanner-justify-top-3VB1M {
     justify-content: flex-start;
     padding-top: 60px; }
+  .HeroBanner-container-fYWwV.HeroBanner-full-height-310ZK {
+    min-height: 100vh; }
 
 .HeroBanner-text-container-3UaLg {
   max-width: 75%;
@@ -126,20 +127,29 @@
     .HeroBanner-buttons-container-2bvpJ {
       margin-top: 60px; } }
 
+.HeroBanner-button-container-2xSm3 {
+  text-align: center; }
+  .HeroBanner-button-container-2xSm3:not(:last-child) {
+    margin: 0 0 20px 0; }
+  @media (min-width: 600px) {
+    .HeroBanner-button-container-2xSm3 {
+      font-size: 24px; }
+      .HeroBanner-button-container-2xSm3.HeroBanner-row-1TEvL {
+        display: inline-block; }
+        .HeroBanner-button-container-2xSm3.HeroBanner-row-1TEvL:not(:last-child) {
+          margin: 0 30px 0 0; } }
+  .HeroBanner-button-container-2xSm3 a {
+    color: #fff; }
+
+.HeroBanner-label-2R3I0 {
+  font-size: 16px;
+  color: #fff; }
+
 .HeroBanner-button-1GnDi {
   font-size: 18px;
   color: #fff;
-  text-align: center;
   cursor: pointer;
   transition: all 0.25s cubic-bezier(0.42, 0, 0.58, 1); }
-  .HeroBanner-button-1GnDi:not(:last-child) {
-    margin: 0 0 20px 0; }
-  @media (min-width: 600px) {
-    .HeroBanner-button-1GnDi {
-      font-size: 24px;
-      display: inline-block; }
-      .HeroBanner-button-1GnDi:not(:last-child) {
-        margin: 0 30px 0 0; } }
   .HeroBanner-button-1GnDi.HeroBanner-border-1PvtJ {
     border: 1px solid #fff;
     padding: 8px 10px; }
@@ -147,8 +157,6 @@
       background: #fff; }
       .HeroBanner-button-1GnDi.HeroBanner-border-1PvtJ:hover a {
         color: #005CAF; }
-  .HeroBanner-button-1GnDi a {
-    color: #fff; }
 
 .HeroBanner-image-container-3HA7n {
   width: 100%;
@@ -207,13 +215,13 @@
   .Feature-title-description-1u7IQ .Feature-title-34dMt {
     display: inline-block;
     font-size: 24px;
-    margin-bottom: 20px; }
+    margin-bottom: 30px; }
     @media (min-width: 600px) {
       .Feature-title-description-1u7IQ .Feature-title-34dMt {
         font-size: 36px; } }
   .Feature-title-description-1u7IQ .Feature-description-2dTj5 {
     font-size: 16px;
-    margin-bottom: 20px; }
+    margin-bottom: 30px; }
     @media (min-width: 600px) {
       .Feature-title-description-1u7IQ .Feature-description-2dTj5 {
         font-size: 18px; } }

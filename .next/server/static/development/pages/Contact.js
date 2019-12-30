@@ -465,16 +465,25 @@ function (_PureComponent) {
     _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(HeroBanner)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "renderButton", function (button, index) {
+      var button_container_classname = _HeroBanner_scss__WEBPACK_IMPORTED_MODULE_10___default()('button-container', {
+        'border': _this.props.button_border,
+        'column': _this.props.button_direction === 'column',
+        'row': _this.props.button_direction === 'row'
+      });
       var button_classname = _HeroBanner_scss__WEBPACK_IMPORTED_MODULE_10___default()('button', {
         'border': _this.props.button_border
       });
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
+        className: button_container_classname
+      }, button.label && react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
+        className: _HeroBanner_scss__WEBPACK_IMPORTED_MODULE_10___default()('label')
+      }, button.label), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: button_classname
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
         href: button.url,
         target: button.target,
         onClick: button.onClick
-      }, button.text));
+      }, button.text)));
     });
 
     return _this;
@@ -490,10 +499,12 @@ function (_PureComponent) {
           text_position = _this$props.text_position,
           buttons = _this$props.buttons,
           button_border = _this$props.button_border,
-          image = _this$props.image;
+          image = _this$props.image,
+          full_height = _this$props.full_height;
       var container_classname = _HeroBanner_scss__WEBPACK_IMPORTED_MODULE_10___default()('container', {
         'justify-top': text_position === 'top',
-        'justify-bottom': text_position === 'bottom'
+        'justify-bottom': text_position === 'bottom',
+        'full-height': full_height
       });
       var text_container_classname = _HeroBanner_scss__WEBPACK_IMPORTED_MODULE_10___default()('text-container', {
         'border': title_border
@@ -529,7 +540,14 @@ Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODUL
   text_position: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.string,
   buttons: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.array,
   button_border: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.bool,
-  image: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.object
+  button_direction: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.string,
+  image: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.object,
+  full_height: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.bool
+});
+
+Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(HeroBanner, "defaultProps", {
+  button_direction: 'row',
+  full_height: true
 });
 
 /* harmony default export */ __webpack_exports__["default"] = (HeroBanner);
@@ -990,10 +1008,14 @@ module.exports = {
 module.exports = {
 	"container": "HeroBanner-container-fYWwV",
 	"justify-top": "HeroBanner-justify-top-3VB1M",
+	"full-height": "HeroBanner-full-height-310ZK",
 	"text-container": "HeroBanner-text-container-3UaLg",
 	"border": "HeroBanner-border-1PvtJ",
 	"title": "HeroBanner-title-2n_0g",
 	"buttons-container": "HeroBanner-buttons-container-2bvpJ",
+	"button-container": "HeroBanner-button-container-2xSm3",
+	"row": "HeroBanner-row-1TEvL",
+	"label": "HeroBanner-label-2R3I0",
 	"button": "HeroBanner-button-1GnDi",
 	"image-container": "HeroBanner-image-container-3HA7n"
 };
@@ -1073,16 +1095,19 @@ function (_Component) {
 
     _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_1__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_2__["default"])(Contact).call(this, props));
     _this.banner_buttons = [{
-      text: 'Email',
-      url: 'mailto:joe@biggica.com'
+      text: 'joe@biggica.com',
+      url: 'mailto:joe@biggica.com',
+      label: 'Email'
     }, {
-      text: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/joebiggica',
-      target: '_blank'
-    }, {
-      text: 'GitHub',
+      text: 'github.com/JoeBiggica',
       url: 'https://github.com/JoeBiggica',
-      target: '_blank'
+      target: '_blank',
+      label: 'GitHub'
+    }, {
+      text: 'linkedin.com/in/joebiggica',
+      url: 'https://www.linkedin.com/in/joebiggica',
+      target: '_blank',
+      label: 'LinkedIn'
     }];
     return _this;
   }
@@ -1094,7 +1119,8 @@ function (_Component) {
         title: "Contact",
         title_border: true,
         text_position: "top",
-        buttons: this.banner_buttons
+        buttons: this.banner_buttons,
+        button_direction: "column"
       })));
     }
   }]);

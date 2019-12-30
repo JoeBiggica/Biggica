@@ -19,19 +19,22 @@ class Contact extends Component {
 
 		this.banner_buttons = [
 			{
-				text: 'Email',
+				text: 'joe@biggica.com',
 				url: 'mailto:joe@biggica.com',
+				label: 'Email',
 			},
 			{
-				text: 'LinkedIn',
-				url: 'https://www.linkedin.com/in/joebiggica',
-				target: '_blank',
-			},
-			{
-				text:'GitHub',
+				text:'github.com/JoeBiggica',
 				url:'https://github.com/JoeBiggica',
 				target: '_blank',
-			}
+				label: 'GitHub',
+			},
+			{
+				text: 'linkedin.com/in/joebiggica',
+				url: 'https://www.linkedin.com/in/joebiggica',
+				target: '_blank',
+				label: 'LinkedIn',
+			},
 		];
 	}
 
@@ -45,6 +48,7 @@ class Contact extends Component {
 						title_border
 						text_position='top'
 						buttons={this.banner_buttons}
+						button_direction='column'
 					/>
 				</section>
 			</>
