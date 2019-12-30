@@ -7,6 +7,8 @@
 	min-height: 100vh;
 	background-size: cover;
 	position: relative;
+	display: flex;
+	align-items: center;
 }
 
 .inner-container {
@@ -22,6 +24,10 @@
     align-items: center;
 
     @include for-tablet-portrait-up {
+    	padding: 70px 150px;
+	}
+
+    @include for-tablet-landscape-up {
     	padding: 70px 60px;
 		justify-content: space-between;
 		align-items: flex-start;
@@ -40,9 +46,13 @@
 	width: 100%;
 	color: white;
 	text-align: center;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
 
-	@include for-tablet-portrait-up {
+	@include for-tablet-landscape-up {
 		width: 50%;
+		display: block;
 
 		&.left {
 			text-align: left;
@@ -62,6 +72,11 @@
 
 		@include for-tablet-portrait-up {
 			font-size: 36px;
+			margin-bottom: 60px;
+		}
+
+		@include for-tablet-landscape-up {
+			margin-bottom: 40px;
 		}
 	}
 
@@ -70,6 +85,10 @@
 		margin-bottom: 30px;
 
 		@include for-tablet-portrait-up {
+			margin-bottom: 60px;
+		}
+
+		@include for-tablet-landscape-up {
 			font-size: 18px;
 		}
 	}
@@ -79,7 +98,7 @@
 	position: relative;
 	width: 100%;
 
-	@include for-tablet-portrait-up {
+	@include for-tablet-landscape-up {
 		width: 50%;
 	}
 
