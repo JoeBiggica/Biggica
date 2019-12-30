@@ -30,7 +30,7 @@ class Projects extends Component {
 				<section>
 					<Feature 
 						title={'Reuters'}
-						description={'A global news site specializing in world class journalism, photography, and market data and analysis. I helped lead the initive to mordernize Reuters.com, elevating it to industy standards in technology and performance. We are in the process of building a brand new site from the ground, starting with our live blog, market data, and video sections.'}
+						description={'A global news site specializing in world class journalism, photography, and market data and analysis. I helped lead the initiative to modernize Reuters.com, elevating it to industry standards in technology and performance. We are in the process of building a brand new site from the ground, starting with our live blog, market data, and video sections.'}
 						color='#FF8000'
 						background_image={'static/reuters_background.png'}
 						image={'static/reuters_site.png'}
